@@ -33,12 +33,37 @@ const config: GatsbyConfig = {
       __key: "images",
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: `markdowns`,
+        path: `${__dirname}/src/markdowns`,
       },
-      __key: "pages",
+    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `multimedia`,
+    //     path: `${__dirname}/src/multimedia`,
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `JFE Engineering Indonesia`,
+    //     short_name: `JFEEI`,
+    //     start_url: `/`,
+    //     background_color: `#ffffff`,
+    //     theme_color: `#149be1`,
+    //     display: `standalone`,
+    //     icon: `src/multimedia/jfeei-favicon.png`,
+    //   },
+    // },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#0073AF`,
+        showSpinner: false,
+      },
     },
   ],
 };

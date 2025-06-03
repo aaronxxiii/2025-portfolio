@@ -1,6 +1,6 @@
 ---
-title: Back End Engineer
-path: test
-name: Jade Soriano
+templateKey: home
+title: Front End Engineer
+name: Aaron Jay
 ---
 I build fast, accessible, and visually precise experiences for the modern web.

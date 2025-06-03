@@ -7,21 +7,25 @@ media_folder: src/assets
 public_folder: ../../assets/
 
 collections:
-  - name: "component"
-    label: "Component"
-    folder: "src/markdowns/components"
-    create: true
-    slug: "{{path}}"
+  - name: "pages"
+    label: "Pages"
+    description: >
+      Where you can edit pages.
+    # folder: "src/markdowns/home"
     editor:
       preview: false
-    fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "components",
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Path", name: "path", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+    files:
+      - file: "src/markdowns/home/index.md"
+        name: "index"
+        label: "Home"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "home",
+            }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
       

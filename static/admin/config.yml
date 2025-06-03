@@ -25,7 +25,14 @@ collections:
               widget: "hidden",
               default: "home",
             }
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      
+          - {
+              label: "About",
+              name: "about",
+              widget: "object",
+              fields:
+                [
+                  { label: "Name", name: "name", widget: "string" },
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "markdown" },
+                ],
+            }

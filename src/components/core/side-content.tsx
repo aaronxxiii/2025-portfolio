@@ -5,19 +5,21 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 function SideContent() {
   const data = useStaticQuery(graphql`
     query {
-        markdownRemark(frontmatter: {templateKey: {eq: "home"}}) {
-      frontmatter {
+     markdownRemark(frontmatter: {templateKey: {eq: "home"}}) {
+    frontmatter {
+      about {
         name
         title
+        body
       }
     }
+  }
     }
   `)
 
-  const name = data?.markdownRemark?.frontmatter?.name
-  const title = data?.markdownRemark?.frontmatter?.title
-
-  console.log(data)
+  const name = data?.markdownRemark?.frontmatter?.about?.name
+  const title = data?.markdownRemark?.frontmatter?.about?.title
+  const body = data?.markdownRemark?.frontmatter?.about?.body
 
   return (
     <div className="bg-zinc-300/50 max-w-[500px] w-full h-auto flex items-center">
@@ -25,12 +27,7 @@ function SideContent() {
         <div className="p-4 flex flex-col">
           <h1 className="font-bold text-2xl m-0 p-0">{name}</h1>
           <p className="m-0">{title}</p>
-          {/* <div className="body" dangerouslySetInnerHTML={{ __html: html }} /> */}
-
-          <p className="max-w-xs">
-            I build fast, accessible, and visually precise experiences for the
-            modern web.
-          </p>
+          <div className="mt-4 max-w-xs" dangerouslySetInnerHTML={{ __html: body }} />
         </div>
 
         <footer className="p-4">

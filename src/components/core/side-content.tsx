@@ -6,14 +6,14 @@ function SideContent() {
   const data = useStaticQuery(graphql`
     query {
      markdownRemark(frontmatter: {templateKey: {eq: "home"}}) {
-    frontmatter {
-      about {
-        name
-        title
-        body
+        frontmatter {
+          about {
+            name
+            title
+            body
+          }
+        }
       }
-    }
-  }
     }
   `)
 

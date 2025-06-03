@@ -36,3 +36,9 @@ collections:
                   { label: "Body", name: "body", widget: "markdown" },
                 ],
             }
+          - {
+              label: "Overview",
+              name: "overview",
+              widget: "object",
+              fields: [{ label: "Body", name: "body", widget: "markdown" }],
+            }

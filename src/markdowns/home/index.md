@@ -35,4 +35,6 @@ experiences:
       - stack name: Laravel
       - stack name: TypeScript
       - stack name: CSS
+    company:
+      name: Rakso CT
 ---

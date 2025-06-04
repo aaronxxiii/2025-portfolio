@@ -47,6 +47,21 @@ collections:
             widget: "list"
             fields:
               - { label: "Date", name: "date", widget: "string" }
+              - {
+                  label: "Company",
+                  name: "company",
+                  widget: "object",
+                  fields:
+                    [
+                      { label: "Name", name: "name", widget: "string" },
+                      {
+                        label: "Link",
+                        name: "link",
+                        widget: "string",
+                        required: false,
+                      },
+                    ],
+                }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Body", name: "body", widget: "markdown" }
               - label: "Stacks"

@@ -28,9 +28,11 @@ function experiences() {
             {experiences?.map((item: any, index: number) =>
                 <div className="" key={item?.title + index}>
                     <p>{item?.date}</p><span>{item?.title}</span>
-                    <ReactMarkdown>
-                        {item?.body}
-                    </ReactMarkdown>
+                    <div className="mt-4">
+                        <ReactMarkdown>
+                            {item?.body}
+                        </ReactMarkdown>
+                    </div>
                     <div className="flex gap-2 mt-4">
                         {item?.stacks?.map((stack: any) => (<Badge>{stack?.stack_name}</Badge>))}
                     </div>

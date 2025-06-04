@@ -11,10 +11,13 @@ overview:
     interfaces that blend thoughtful design with robust engineering.
 
 
+
     My favorite work lives at the intersection of design and development—creating experiences that not only look great but are meticulously built for performance and usability. 
 
 
+
     Currently, I'm a Front-End Engineer at Betrnk, specializing in development. I help design, build, and maintain the UI components that power Betrnk's frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.
+
 
 
     In the past, I’ve developed CMS projects for international clients and built software across agencies, startups, and businesses in industries ranging from digital media to tech.

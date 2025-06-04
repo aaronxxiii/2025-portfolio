@@ -64,9 +64,9 @@ experiences:
       maintainability, and user experience.
     stacks:
       - stack name: Angular
-      - stack name: Laravel
       - stack name: TypeScript
       - stack name: CSS
+      - stack name: Laravel
     company:
       name: Rakso CT
 ---

@@ -1,11 +1,11 @@
 import React from "react";
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby";
 
 function SideContent() {
   const data = useStaticQuery(graphql`
     query {
-     markdownRemark(frontmatter: {templateKey: {eq: "home"}}) {
+      markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
         frontmatter {
           about {
             name
@@ -15,11 +15,13 @@ function SideContent() {
         }
       }
     }
-  `)
+  `);
 
-  const name = data?.markdownRemark?.frontmatter?.about?.name
-  const title = data?.markdownRemark?.frontmatter?.about?.title
-  const body = data?.markdownRemark?.frontmatter?.about?.body
+  const name = data?.markdownRemark?.frontmatter?.about?.name;
+  const title = data?.markdownRemark?.frontmatter?.about?.title;
+  const body = data?.markdownRemark?.frontmatter?.about?.body;
+
+  console.log(data);
 
   return (
     <div className="bg-zinc-300/50 max-w-[500px] w-full h-auto flex items-center">
@@ -27,7 +29,10 @@ function SideContent() {
         <div className="p-4 flex flex-col">
           <h1 className="font-bold text-2xl m-0 p-0">{name}</h1>
           <p className="m-0">{title}</p>
-          <div className="mt-4 max-w-xs" dangerouslySetInnerHTML={{ __html: body }} />
+          <div
+            className="mt-4 max-w-xs"
+            dangerouslySetInnerHTML={{ __html: body }}
+          />
         </div>
 
         <footer className="p-4">

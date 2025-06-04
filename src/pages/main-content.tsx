@@ -5,7 +5,7 @@ import React from "react";
 function MainContent() {
   const data = useStaticQuery(graphql`
     query {
-     markdownRemark(frontmatter: {templateKey: {eq: "home"}}) {
+      markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
         frontmatter {
           overview {
             body
@@ -13,12 +13,9 @@ function MainContent() {
         }
       }
     }
-  `)
+  `);
 
-
-  const body = data?.markdownRemark?.frontmatter?.overview?.body
-  console.log(data)
-
+  const body = data?.markdownRemark?.frontmatter?.overview?.body;
 
   return (
     <ScrollArea className="h-screen w-full bg-slate-300/20">

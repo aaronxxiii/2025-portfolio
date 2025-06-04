@@ -42,3 +42,19 @@ collections:
               widget: "object",
               fields: [{ label: "Body", name: "body", widget: "markdown" }],
             }
+          - label: "Experiences"
+            name: "experiences"
+            widget: "list"
+            fields:
+              - { label: "Date", name: "Date", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: "body", widget: "markdown" }
+              - label: "Stacks"
+                name: "stacks"
+                widget: "list"
+                fields:
+                  - {
+                      label: "Stack Name",
+                      name: "stack name",
+                      widget: "string",
+                    }

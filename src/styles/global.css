@@ -515,6 +515,7 @@
 
 body,
 main {
+  font-family: "Inter var";
   overflow: hidden;
   scroll-behavior: smooth;
   margin: 0;
@@ -524,4 +525,13 @@ main {
 * {
   margin: 0;
   padding: 0;
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url(../../static/fonts/InterVariable.woff2) format("woff2");
 }

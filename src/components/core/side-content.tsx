@@ -22,10 +22,8 @@ function SideContent() {
   const title = data?.markdownRemark?.frontmatter?.about?.title;
   const body = data?.markdownRemark?.frontmatter?.about?.body;
 
-  console.log(data);
-
   return (
-    <div className="bg-zinc-300/50 max-w-[500px] w-full h-auto flex items-center">
+    <div className="bg-zinc-300/50 max-w-[400px] w-full h-auto flex items-center">
       <div className="flex flex-col justify-between h-[calc(100vh-50px)] w-full ">
         <div className="p-4 flex flex-col">
           <h1 className="font-bold text-2xl m-0 p-0">{name}</h1>

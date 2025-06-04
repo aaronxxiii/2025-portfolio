@@ -140,7 +140,7 @@ const links = [
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main className="m-0 p-0 overflow-hidden">
+    <main className="m-0 p-0 overflow-hidden leading-relaxed">
       <Layout>
         <MainContent />
       </Layout>

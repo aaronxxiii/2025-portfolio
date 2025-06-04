@@ -22,21 +22,6 @@ overview:
 
     In the past, I’ve developed CMS projects for international clients and built software across agencies, startups, and businesses in industries ranging from digital media to tech.
 experiences:
-  - date: Jan 2022 - Apr 2022
-    title: Associate Software Engineer
-    body: Worked alongside student designers and engineers to develop and enhance
-      school aide platforms. Integrated third-party APIs, including Paymongo for
-      secure payment processing, and implemented features such as user data
-      fetching, dynamic content rendering and responsive design. Contributed to
-      full-stack development with a focus on API integration, code
-      maintainability, and user experience.
-    stacks:
-      - stack name: Angular
-      - stack name: Laravel
-      - stack name: TypeScript
-      - stack name: CSS
-    company:
-      name: Rakso CT
   - date: Sep 2022 - Jul 2024
     company:
       name: Blackfort
@@ -53,4 +38,19 @@ experiences:
       - stack name: TypeScript
       - stack name: SCSS
       - stack name: .NET Blazor
+  - date: Jan 2022 - Apr 2022
+    title: Associate Software Engineer
+    body: Worked alongside student designers and engineers to develop and enhance
+      school aide platforms. Integrated third-party APIs, including Paymongo for
+      secure payment processing, and implemented features such as user data
+      fetching, dynamic content rendering and responsive design. Contributed to
+      full-stack development with a focus on API integration, code
+      maintainability, and user experience.
+    stacks:
+      - stack name: Angular
+      - stack name: Laravel
+      - stack name: TypeScript
+      - stack name: CSS
+    company:
+      name: Rakso CT
 ---

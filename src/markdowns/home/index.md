@@ -26,7 +26,8 @@ experiences:
       maintainability, and user experience.
     stacks:
       - stack name: Angular
-      - stack name: TypeScript
       - stack name: Laravel
+      - stack name: TypeScript
       - stack name: CSS
+    date: Jan 2022 - Apr 2022
 ---

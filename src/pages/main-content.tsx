@@ -2,6 +2,7 @@ import Experiences from "@/components/core/experiences";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import ReactMarkdown from "react-markdown";
 
 function MainContent() {
   const data = useStaticQuery(graphql`
@@ -24,8 +25,6 @@ function MainContent() {
     }
   `);
 
-
-  console.log(data)
   const body = data?.markdownRemark?.frontmatter?.overview?.body;
 
   return (
@@ -33,7 +32,9 @@ function MainContent() {
       <ScrollBar />
       <section id="about">
         <div className="p-10">
-          <div className="mt-4" dangerouslySetInnerHTML={{ __html: body }} />
+          <ReactMarkdown>
+            {body}
+          </ReactMarkdown>
         </div>
       </section>
       <section className="h-[100vh]">

@@ -1,6 +1,7 @@
 import React from "react";
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
 import { graphql, Link, useStaticQuery } from "gatsby";
+import ReactMarkdown from "react-markdown";
 
 function SideContent() {
   const data = useStaticQuery(graphql`
@@ -29,10 +30,9 @@ function SideContent() {
         <div className="p-4 flex flex-col">
           <h1 className="font-bold text-2xl m-0 p-0">{name}</h1>
           <p className="m-0">{title}</p>
-          <div
-            className="mt-4 max-w-xs"
-            dangerouslySetInnerHTML={{ __html: body }}
-          />
+          <ReactMarkdown>
+            {body}
+          </ReactMarkdown>
         </div>
 
         <footer className="p-4">

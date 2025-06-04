@@ -7,26 +7,26 @@ about:
     web.
 overview:
   body: >-
-    I’m a developer passionate about crafting accessible, pixel-perfect user
-    interfaces that blend thoughtful design with robust engineering.
+    <p>I’m a developer passionate about crafting accessible, pixel-perfect user
+    interfaces that blend thoughtful design with robust engineering.</p>
 
 
-    My favorite work lives at the intersection of design and development—creating experiences that not only look great but are meticulously built for performance and usability.
+    <p>My favorite work lives at the intersection of design and development—creating experiences that not only look great but are meticulously built for performance and usability.</p>
 
 
-    Currently, I'm a Front-End Engineer at Betrnk, specializing in development. I help design, build, and maintain the UI components that power Betrnk's frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.
+    <p>Currently, I'm a Front-End Engineer at Betrnk, specializing in development. I help design, build, and maintain the UI components that power Betrnk's frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.</p>
 
 
-    In the past, I’ve developed CMS projects for international clients and built software across agencies, startups, and businesses in industries ranging from digital media to tech.
+    <p>In the past, I’ve developed CMS projects for international clients and built software across agencies, startups, and businesses in industries ranging from digital media to tech.</p>
 experiences:
   - date: Jan 2022 - Apr 2022
     title: Associate Software Engineer
-    body: Worked alongside student designers and engineers to develop and enhance
+    body: <p>Worked alongside student designers and engineers to develop and enhance
       school aide platforms. Integrated third-party APIs, including **Paymongo**
       for secure payment processing, and implemented features such as user data
       fetching, dynamic content rendering and responsive design. Contributed to
       full-stack development with a focus on API integration, code
-      maintainability, and user experience.
+      maintainability, and user experience.</p>
     stacks:
       - stack name: Angular
       - stack name: Laravel

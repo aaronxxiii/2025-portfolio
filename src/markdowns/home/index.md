@@ -16,7 +16,7 @@ overview:
 
     <p> In the past, I’ve developed CMS projects for international clients and built software across agencies, startups, and businesses in industries ranging from digital media to tech.</p>
 experiences:
-  - Date: Jan 2022 - Apr 2022
+  - date: Jan 2022 - Apr 2022
     title: Associate Software Engineer
     body: <﻿p>Worked alongside student designers and engineers to develop and
       enhance school aide platforms. Integrated third-party APIs, including
@@ -29,5 +29,4 @@ experiences:
       - stack name: Laravel
       - stack name: TypeScript
       - stack name: CSS
-    date: Jan 2022 - Apr 2022
 ---

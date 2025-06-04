@@ -1,3 +1,4 @@
+import Experiences from "@/components/core/experiences";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
@@ -10,22 +11,34 @@ function MainContent() {
           overview {
             body
           }
+          experiences {
+            date
+            body
+            title
+            stacks {
+              stack_name
+            }
+          }
         }
       }
     }
   `);
 
+
+  console.log(data)
   const body = data?.markdownRemark?.frontmatter?.overview?.body;
 
   return (
     <ScrollArea className="h-screen w-full bg-slate-300/20">
       <ScrollBar />
-      <section id="about" className="h-[100vh]">
+      <section id="about">
         <div className="p-10">
           <div className="mt-4" dangerouslySetInnerHTML={{ __html: body }} />
         </div>
       </section>
-      <section className="h-[100vh]">experience</section>
+      <section className="h-[100vh]">
+        <Experiences />
+      </section>
       <section className="h-[100vh]">projects</section>
     </ScrollArea>
   );

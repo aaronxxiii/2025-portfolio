@@ -46,7 +46,7 @@ collections:
             name: "experiences"
             widget: "list"
             fields:
-              - { label: "Date", name: "Date", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Body", name: "body", widget: "markdown" }
               - label: "Stacks"

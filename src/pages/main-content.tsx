@@ -38,7 +38,7 @@ function MainContent() {
           </ReactMarkdown>
         </div>
       </section>
-      <section className="h-[100vh]">
+      <section className="h-[100vh] flex flex-col gap-10">
         <Experiences />
       </section>
       <section className="h-[100vh]">projects</section>

@@ -30,9 +30,11 @@ function SideContent() {
         <div className="p-4 flex flex-col">
           <h1 className="font-bold text-2xl m-0 p-0">{name}</h1>
           <p className="m-0">{title}</p>
-          <ReactMarkdown>
-            {body}
-          </ReactMarkdown>
+          <div className="mt-4">
+            <ReactMarkdown>
+              {body}
+            </ReactMarkdown>
+          </div>
         </div>
 
         <footer className="p-4">

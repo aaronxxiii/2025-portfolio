@@ -15,6 +15,9 @@ function experiences() {
             stacks {
               stack_name
             }
+            company {
+              name
+            }
           }
         }
       }
@@ -24,10 +27,10 @@ function experiences() {
     const experiences = data?.markdownRemark?.frontmatter?.experiences
 
     return (
-        <div className="p-10 space-y-4">
+        <div className="px-10 flex flex-col gap-10">
             {experiences?.map((item: any, index: number) =>
                 <div className="" key={item?.title + index}>
-                    <p>{item?.date}</p><span>{item?.title}</span>
+                    <p>{item?.date}</p><span>{item?.title} - {item?.company?.name}</span>
                     <div className="mt-4">
                         <ReactMarkdown>
                             {item?.body}

@@ -7,7 +7,7 @@ interface ILayout {
 
 export const Layout: FC<ILayout> = ({ children }) => {
   return (
-    <div className="flex h-screen !overflow-hidden max-w-[1024px] w-full mx-auto ">
+    <div className="flex h-screen !overflow-hidden max-w-[1280px] w-full mx-auto ">
       <SideContent />
       {children}
     </div>

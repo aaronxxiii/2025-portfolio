@@ -30,15 +30,15 @@ function MainContent() {
 
   return (
     <ScrollArea className="h-screen w-full bg-slate-300/20">
-      <ScrollBar />
-      <section id="about" className="mt-20">
+      {/* <ScrollBar /> */}
+      <section id="about" className="mt-20 mx-auto max-w-3xl">
         <div className="p-10 flex flex-col gap-4">
           <ReactMarkdown>
             {body}
           </ReactMarkdown>
         </div>
       </section>
-      <section className="h-[100vh] mt-20">
+      <section className="h-[100vh] mt-20 max-w-3xl mx-auto">
         <Experiences />
       </section>
       <section className="h-[100vh]">projects</section>

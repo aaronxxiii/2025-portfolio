@@ -22,7 +22,7 @@ overview:
 
     In the past, I’ve developed CMS projects for international clients and built software across agencies, startups, and businesses in industries ranging from digital media to tech.
 experiences:
-  - date: Jul 24 - Present
+  - date: Jul 2024 - Present
     company:
       name: Betrnk
     title: Front End Engineer

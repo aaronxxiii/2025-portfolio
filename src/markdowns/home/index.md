@@ -18,12 +18,12 @@ overview:
 experiences:
   - Date: Jan 2022 - Apr 2022
     title: Associate Software Engineer
-    body: Worked alongside student designers and engineers to develop and enhance
-      school aide platforms. Integrated third-party APIs, including **Paymongo**
-      for secure payment processing, and implemented features such as user data
-      fetching, dynamic content rendering and responsive design. Contributed to
-      full-stack development with a focus on API integration, code
-      maintainability, and user experience.
+    body: <﻿p>Worked alongside student designers and engineers to develop and
+      enhance school aide platforms. Integrated third-party APIs, including
+      <﻿strong>Paymongo<strong/> for secure payment processing, and implemented
+      features such as user data fetching, dynamic content rendering and
+      responsive design. Contributed to full-stack development with a focus on
+      API integration, code maintainability, and user experience. </p>
     stacks:
       - stack name: Angular
       - stack name: Laravel

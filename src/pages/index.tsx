@@ -2,6 +2,7 @@ import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import MainContent from "./main-content";
 import Layout from "@/components/core/layout";
+import SideContent from "@/components/core/side-content";
 
 const pageStyles = {
   color: "#232129",
@@ -140,11 +141,12 @@ const links = [
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main className="m-0 p-0 overflow-hidden leading-relaxed">
-      <Layout>
+    <div className="flex justify-between max-w-[1280px] mx-auto">
+      <SideContent />
+      <main className="m-0 p-0 leading-relaxed px-24 pt-24">
         <MainContent />
-      </Layout>
-    </main>
+      </main>
+    </div>
   );
 };
 

@@ -1,8 +1,6 @@
 import Experiences from "@/components/core/experiences";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import Markdown from "react-markdown";
 import ReactMarkdown from "react-markdown";
 
 function MainContent() {
@@ -29,10 +27,10 @@ function MainContent() {
   const body = data?.markdownRemark?.frontmatter?.overview?.body;
 
   return (
-    <ScrollArea className="h-screen w-full bg-slate-300/20">
+    <div className="w-full">
       {/* <ScrollBar /> */}
-      <section id="about" className="mt-20 mx-auto max-w-3xl">
-        <div className="p-10 flex flex-col gap-4">
+      <section id="about" className="mx-auto max-w-3xl">
+        <div className="flex flex-col gap-4">
           <ReactMarkdown>
             {body}
           </ReactMarkdown>
@@ -42,7 +40,7 @@ function MainContent() {
         <Experiences />
       </section>
       <section className="h-[100vh]">projects</section>
-    </ScrollArea>
+    </div>
   );
 }
 

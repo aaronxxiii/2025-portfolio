@@ -23,26 +23,24 @@ function SideContent() {
   const body = data?.markdownRemark?.frontmatter?.about?.body;
 
   return (
-    <div className="bg-zinc-300/50 max-w-[400px] w-full h-auto flex items-center">
-      <div className="flex flex-col justify-between h-[calc(100vh-50px)] w-full ">
-        <div className="p-4 flex flex-col">
-          <h1 className="font-bold text-2xl m-0 p-0">{name}</h1>
-          <p className="m-0">{title}</p>
-          <div className="mt-4">
-            <ReactMarkdown>
-              {body}
-            </ReactMarkdown>
-          </div>
+    <header className="sticky top-0 max-w-[400px] max-h-screen min-h-screen w-full h-full flex flex-col justify-between box-border py-24">
+      <div className="px-4 flex flex-col">
+        <h1 className="font-bold text-2xl m-0 p-0">{name}</h1>
+        <p className="m-0">{title}</p>
+        <div className="mt-4">
+          <ReactMarkdown>
+            {body}
+          </ReactMarkdown>
         </div>
-
-        <footer className="p-4">
-          <div className="socials flex items-center gap-2">
-            <BsFacebook className="w-5 h-5" />
-            <BsLinkedin className="w-5 h-5" />
-          </div>
-        </footer>
       </div>
-    </div>
+
+      <div className="px-4">
+        <div className="socials flex items-center gap-2">
+          <BsFacebook className="w-5 h-5" />
+          <BsLinkedin className="w-5 h-5" />
+        </div>
+      </div>
+    </header>
   );
 }
 

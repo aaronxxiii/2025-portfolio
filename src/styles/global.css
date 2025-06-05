@@ -516,10 +516,10 @@
 body,
 main {
   font-family: "Inter var";
-  overflow: hidden;
   scroll-behavior: smooth;
   margin: 0;
   box-sizing: content-box;
+  /* background-color: color-mix(in oklab, oklch(0.869 0.022 252.894) 20%, transparent); */
 }
 
 * {

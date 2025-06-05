@@ -33,11 +33,11 @@ function projects() {
   const projects = data?.markdownRemark?.frontmatter?.projects
 
   return (
-    <div className="flex flex-col gap-y-20">
+    <div className="flex flex-col gap-y-12">
       {projects?.map((item: any, index: number) => {
         const image = getImage(item?.image)
-        return (<div className="grid grid-cols-8 justify-start rounded-sm group relative transition-all duration-300 hover:cursor-pointer" key={item?.title + index} onClick={() => item?.link ? openInNewTab(item?.link) : void (0)}>
-          <div className="col-span-2">
+        return (<div className="grid grid-cols-8 gap-y-4 justify-start rounded-sm group relative transition-all duration-300 hover:cursor-pointer" key={item?.title + index} onClick={() => item?.link ? openInNewTab(item?.link) : void (0)}>
+          <div className="col-span-8 md:col-span-2 row-start-2 md:row-start-1">
             <GatsbyImage
               className="mt-1"
               image={image}
@@ -45,9 +45,9 @@ function projects() {
               placeholder="none"
             />
           </div>
-          <div className="col-span-6 ml-0 md:ml-6">
+          <div className="col-span-8 md:col-span-6 ml-0 md:ml-6">
             <span className="font-semibold text-lg flex items-start justify-between">{item?.title} {item?.link && <ExternalLinkIcon className="w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300" />} </span>
-            <div className="mt-4 text-sm">
+            <div className="mt-4 text-sm text-justify">
               <ReactMarkdown>
                 {item?.body}
               </ReactMarkdown>
@@ -56,7 +56,7 @@ function projects() {
               {item?.stacks?.map((stack: any, index: number) => (<Badge key={stack?.stack_name + index}>{stack?.stack_name}</Badge>))}
             </div>
           </div>
-          <span className="absolute -inset-6 p-6 group-hover:bg-slate-200/10 transition-all duration-300 -z-1">
+          <span className="absolute -inset-6 p-6 group-hover:bg-slate-400/10 transition-all duration-300 -z-1 rounded-sm">
           </span>
         </div>)
       }

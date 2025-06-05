@@ -31,16 +31,16 @@ function MainContent() {
     <div className="w-full">
       {/* <ScrollBar /> */}
       <section id="about" className="mx-auto max-w-3xl">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 text-justify">
           <ReactMarkdown>
             {body}
           </ReactMarkdown>
         </div>
       </section>
-      <section className="h-[100vh] mt-20 max-w-3xl mx-auto">
+      <section className="pt-24 max-w-3xl mx-auto">
         <Experiences />
       </section>
-      <section className="h-[100vh] mt-20 max-w-3xl mx-auto">
+      <section className="h-[100vh] pt-24 max-w-3xl mx-auto">
         <Projects />
       </section>
     </div>

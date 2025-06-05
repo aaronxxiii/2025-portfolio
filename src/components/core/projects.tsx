@@ -52,7 +52,7 @@ function projects() {
                 {item?.body}
               </ReactMarkdown>
             </div>
-            <div className="flex gap-2 mt-4">
+            <div className="flex gap-2 mt-4 flex-wrap">
               {item?.stacks?.map((stack: any, index: number) => (<Badge key={stack?.stack_name + index}>{stack?.stack_name}</Badge>))}
             </div>
           </div>

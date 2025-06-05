@@ -141,9 +141,9 @@ const links = [
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <div className="flex justify-between flex-col md:flex-row max-w-[1280px] mx-auto">
+    <div className="flex justify-between flex-col md:flex-row max-w-[1280px] mx-auto !scroll-smooth">
       <SideContent />
-      <main className="m-0 p-0 leading-relaxed px-6 md:px-24 md:pt-24 pt-6">
+      <main className="m-0 p-0 leading-relaxed px-6 md:px-24">
         <MainContent />
       </main>
     </div>

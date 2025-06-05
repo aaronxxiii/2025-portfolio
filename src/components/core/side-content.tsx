@@ -2,9 +2,9 @@ import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import ReactMarkdown from "react-markdown";
-import { useVisibleSection } from "@/lib/use-visible-section";
-import { Button, buttonVariants } from "../ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 
 
@@ -17,18 +17,25 @@ function SideContent() {
             name
             title
             body
+          }
+          socials {
+            image {
+              publicURL
             }
-            }
-            }
-            }
-            `);
+            title
+            link
+          }  
+        }
+      }
+    }
+  `);
 
   const name = data?.markdownRemark?.frontmatter?.about?.name;
   const title = data?.markdownRemark?.frontmatter?.about?.title;
   const body = data?.markdownRemark?.frontmatter?.about?.body;
+  const socials = data?.markdownRemark?.frontmatter?.socials
 
-  const SECTION_IDS = ['about', 'experiences', 'projects'];
-  // const activeId = useVisibleSection(SECTION_IDS);
+  console.log(data)
 
   const navigationArray = [
     {
@@ -61,7 +68,7 @@ function SideContent() {
       <nav className="hidden flex-col justify-start px-6 md:flex">
         {navigationArray.map((item: any, index: number) => (
           <a
-            className={cn(buttonVariants({ variant: "link" }), "w-max !text-xs p-0")}
+            className={cn(buttonVariants({ variant: "link" }), "w-max !text-xs p-0 no-underline")}
             key={item?.value}
             href={item?.value}
           >
@@ -72,8 +79,18 @@ function SideContent() {
 
       <div className="px-6">
         <div className="socials flex items-center gap-2">
-          <BsGithub className="w-5 h-5" />
-          <BsLinkedin className="w-5 h-5" />
+          {socials?.map((item: any, index: number) => {
+            const logo = item?.image?.publicURL
+            return (<Tooltip> <TooltipTrigger asChild key={item?.title + index}>
+              <a href={item?.link} target="_blank">
+                <img className="w-6 h-6" src={logo} alt={item?.title} />
+              </a>
+            </TooltipTrigger>
+              <TooltipContent>
+                <p>{item?.title}</p>
+              </TooltipContent>
+            </Tooltip>)
+          })}
         </div>
       </div>
     </header>

@@ -519,6 +519,7 @@ main {
   scroll-behavior: smooth;
   margin: 0;
   box-sizing: content-box;
+  scroll-behavior: smooth;
   /* background-color: color-mix(in oklab, oklch(0.869 0.022 252.894) 20%, transparent); */
 }
 

@@ -100,3 +100,28 @@ collections:
                       name: "stack name",
                       widget: "string",
                     }
+          - label: "Socials"
+            name: "socials"
+            widget: "list"
+            fields:
+              - {
+                  label: "Image",
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                }
+              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Link",
+                  name: "link",
+                  widget: "string",
+                  required: false,
+                }
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              [
+                { label: "Name", name: "name", widget: "string", required: false, hidden: true },
+                { label: "Body", name: "body", widget: "markdown" },
+              ]

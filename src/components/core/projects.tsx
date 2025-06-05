@@ -13,7 +13,6 @@ function projects() {
         frontmatter {
           projects {
             image {
-                publicURL
                 childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, formats: WEBP)
                 }

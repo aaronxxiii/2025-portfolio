@@ -112,4 +112,7 @@ socials:
   - image: ../../assets/linkedin-logo.svg
     title: LinkedIn
     link: https://www.linkedin.com/in/aaronmlbnn/
+footer:
+  body: Built with **GatsbyJS**, **NetlifyCMS** and **Tailwind CSS**, deployed
+    with Netlify.
 ---

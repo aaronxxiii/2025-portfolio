@@ -80,6 +80,7 @@ projects:
       - stack name: NextJS
       - stack name: TypeScript
       - stack name: Tailwind
+      - stack name: ShadCN
       - stack name: Laravel
   - image: ../../assets/spanasia_thumbnail.jpg
     title: Span Asia
@@ -90,8 +91,9 @@ projects:
       make a type specimen book.
     stacks:
       - stack name: React
-      - stack name: JavaScript
+      - stack name: TypeScript
       - stack name: SCSS
+      - stack name: RadixUI
       - stack name: Umbraco CMS
   - image: ../../assets/jfe_thumbnail.jpg
     title: JFE Engineering

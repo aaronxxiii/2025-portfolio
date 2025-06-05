@@ -1,4 +1,5 @@
 import Experiences from "@/components/core/experiences";
+import Footer from "@/components/core/footer";
 import Projects from "@/components/core/projects";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
@@ -42,7 +43,11 @@ function MainContent() {
       </section>
       <section id="projects" className="h-[100vh] pt-24 max-w-3xl mx-auto">
         <Projects />
+        <footer className="pt-32 pb-16 text-center flex justify-center">
+          <Footer />
+        </footer>
       </section>
+
     </div>
   );
 }

@@ -73,3 +73,30 @@ collections:
                       name: "stack name",
                       widget: "string",
                     }
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - {
+                  label: "Image",
+                  name: image,
+                  widget: image,
+                  choose_url: false,
+                }
+              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Link",
+                  name: "link",
+                  widget: "string",
+                  required: false,
+                }
+              - { label: "Body", name: "body", widget: "markdown" }
+              - label: "Stacks"
+                name: "stacks"
+                widget: "list"
+                fields:
+                  - {
+                      label: "Stack Name",
+                      name: "stack name",
+                      widget: "string",
+                    }

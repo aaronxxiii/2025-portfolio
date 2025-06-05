@@ -1,4 +1,5 @@
 import Experiences from "@/components/core/experiences";
+import Projects from "@/components/core/projects";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import ReactMarkdown from "react-markdown";
@@ -39,7 +40,9 @@ function MainContent() {
       <section className="h-[100vh] mt-20 max-w-3xl mx-auto">
         <Experiences />
       </section>
-      <section className="h-[100vh]">projects</section>
+      <section className="h-[100vh] mt-20 max-w-3xl mx-auto">
+        <Projects />
+      </section>
     </div>
   );
 }

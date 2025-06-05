@@ -81,4 +81,15 @@ projects:
       - stack name: React
       - stack name: SCSS
       - stack name: Umbraco CMS
+  - image: ../../assets/jfe_thumbnail.jpg
+    title: JFE Engineering
+    link: https://jfem.com.my/
+    body: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    stacks:
+      - stack name: React
+      - stack name: SCSS
+      - stack name: Netlify CMS
 ---

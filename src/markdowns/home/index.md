@@ -79,6 +79,7 @@ projects:
       make a type specimen book.
     stacks:
       - stack name: React
+      - stack name: JavaScript
       - stack name: SCSS
       - stack name: Umbraco CMS
   - image: ../../assets/jfe_thumbnail.jpg
@@ -90,6 +91,18 @@ projects:
       make a type specimen book.
     stacks:
       - stack name: React
+      - stack name: TypeScript
       - stack name: SCSS
       - stack name: Netlify CMS
+  - image: ../../assets/betrnk_thumbnail.jpg
+    title: Betrnk Cage
+    body: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    stacks:
+      - stack name: NextJS
+      - stack name: TypeScript
+      - stack name: Tailwind
+      - stack name: Laravel
 ---

@@ -105,4 +105,11 @@ projects:
       - stack name: TypeScript
       - stack name: SCSS
       - stack name: Netlify CMS
+socials:
+  - image: ../../assets/github-logo.svg
+    link: https://github.com/aarondotdev
+    title: Github
+  - image: ../../assets/linkedin-logo.svg
+    title: LinkedIn
+    link: https://www.linkedin.com/in/aaronmlbnn/
 ---

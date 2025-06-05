@@ -27,7 +27,7 @@ function experiences() {
   const experiences = data?.markdownRemark?.frontmatter?.experiences
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 pt-10">
       {experiences?.map((item: any, index: number) =>
         <div className="grid grid-cols-8 justify-start relative" key={item?.title + index}>
           <p className="text-sm whitespace-nowrap mt-1 col-span-8 md:col-span-2">{item?.date}</p>

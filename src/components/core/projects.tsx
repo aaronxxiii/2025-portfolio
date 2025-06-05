@@ -3,9 +3,11 @@ import React, { Fragment } from "react";
 import { Badge } from "@/components/ui/badge";
 import ReactMarkdown from "react-markdown";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { ExternalLinkIcon } from "lucide-react";
+import { openInNewTab } from "@/lib/utils";
 
 function projects() {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
         frontmatter {
@@ -28,37 +30,39 @@ function projects() {
     }
   `);
 
-    const projects = data?.markdownRemark?.frontmatter?.projects
+  const projects = data?.markdownRemark?.frontmatter?.projects
 
-    return (
-        <div className="flex flex-col gap-10">
-            {projects?.map((item: any, index: number) => {
-                const image = getImage(item?.image)
-                return <div className="grid grid-cols-8 justify-start relative" key={item?.title + index}>
-                    <div className="col-span-3">
-                        <GatsbyImage
-                            className="logo"
-                            image={image}
-                            alt="Logo"
-                            placeholder="none"
-                        />
-                    </div>
-                    <div className="col-span-5 ml-0 md:ml-10">
-                        <span className="font-semibold text-lg">{item?.title}</span>
-                        <div className="mt-4 text-sm">
-                            <ReactMarkdown>
-                                {item?.body}
-                            </ReactMarkdown>
-                        </div>
-                        <div className="flex gap-2 mt-4">
-                            {item?.stacks?.map((stack: any, index: number) => (<Badge key={stack?.stack_name + index}>{stack?.stack_name}</Badge>))}
-                        </div>
-                    </div>
-                </div>
-            }
-            )}
-        </div>
-    );
+  return (
+    <div className="flex flex-col gap-y-20">
+      {projects?.map((item: any, index: number) => {
+        const image = getImage(item?.image)
+        return (<div className="grid grid-cols-8 justify-start rounded-sm group relative transition-all duration-300 hover:cursor-pointer" key={item?.title + index} onClick={() => item?.link ? openInNewTab(item?.link) : void (0)}>
+          <div className="col-span-2">
+            <GatsbyImage
+              className="mt-1"
+              image={image}
+              alt="Logo"
+              placeholder="none"
+            />
+          </div>
+          <div className="col-span-6 ml-0 md:ml-6">
+            <span className="font-semibold text-lg flex items-start justify-between">{item?.title} {item?.link && <ExternalLinkIcon className="w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300" />} </span>
+            <div className="mt-4 text-sm">
+              <ReactMarkdown>
+                {item?.body}
+              </ReactMarkdown>
+            </div>
+            <div className="flex gap-2 mt-4">
+              {item?.stacks?.map((stack: any, index: number) => (<Badge key={stack?.stack_name + index}>{stack?.stack_name}</Badge>))}
+            </div>
+          </div>
+          <span className="absolute -inset-6 p-6 group-hover:bg-slate-200/10 transition-all duration-300 -z-1">
+          </span>
+        </div>)
+      }
+      )}
+    </div>
+  );
 }
 
 export default projects;

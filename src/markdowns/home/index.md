@@ -20,19 +20,19 @@ overview:
 
 
 
-    In the past, I’ve developed CMS projects for international clients and built software across agencies, startups, and businesses in industries ranging from digital media to tech.
+    In the past, I’ve developed CMS projects for international clients and built software across agencies, companies, and businesses in industries ranging from digital media to tech. 
 experiences:
   - date: Jul 2024 - Present
     company:
       name: Betrnk
     title: Front End Engineer
-    body: It is a long established fact that a reader will be distracted by the
-      readable content of a page when looking at its layout. The point of using
-      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-      as opposed to using 'Content here, content here', making it look like
-      readable English. Many desktop publishing packages and web page editors
-      now use Lorem Ipsum as their default model text, and a search for 'lorem
-      ipsum' will uncover many web sites still in their infancy.
+    body: As a Frontend Engineer at Betrnk, I play a key role in architecting and
+      developing robust, scalable, and performant user interfaces for
+      mission-critical web applications. My responsibilities span across the
+      full frontend development lifecycle, from ideation and prototyping to
+      implementation and optimization. I collaborate closely with
+      cross-functional teams including backend engineers, designers, and product
+      managers to deliver seamless and intuitive user experiences.
     stacks:
       - stack name: Nextjs
       - stack name: TypeScript
@@ -42,13 +42,14 @@ experiences:
     company:
       name: Blackfort
     title: Front End Developer
-    body: It is a long established fact that a reader will be distracted by the
-      readable content of a page when looking at its layout. The point of using
-      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-      as opposed to using 'Content here, content here', making it look like
-      readable English. Many desktop publishing packages and web page editors
-      now use Lorem Ipsum as their default model text, and a search for 'lorem
-      ipsum' will uncover many web sites still in their infancy.
+    body: I played a hands-on role in the end-to-end development of various web
+      applications, collaborating across multiple teams to deliver high-quality,
+      functional, and visually consistent web experiences. I contributed to the
+      design, implementation, testing, and optimization of features across
+      several projects, each with unique goals and requirements. Working in a
+      dynamic and fast-paced environment, I frequently interacted with
+      designers, backend developers, QA engineers, and product stakeholders to
+      ensure technical alignment, design fidelity, and user satisfaction.
     stacks:
       - stack name: GatsbyJS
       - stack name: TypeScript

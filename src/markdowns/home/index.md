@@ -73,10 +73,15 @@ experiences:
 projects:
   - image: ../../assets/betrnk_thumbnail.jpg
     title: Betrnk Cage
-    body: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book.
+    body: >-
+      The Cage System is an internal project management and operations dashboard
+      developed for streamlining workflows within Betrnk’s junket management
+      ecosystem. As part of the frontend engineering team, I helped design and
+      implement a dynamic interface that consolidates complex data and
+      access-controlled operations into a single, intuitive platform.
+
+
+      I was responsible for building modular, responsive UI components using Next.js and Tailwind CSS, integrated with Zustand for state management and React Hook Form for flexible form workflows. The system supports role-based access, dynamic permissions, and authenticated routing using NextAuth allowing secure and personalized access across multiple user tiers.
     stacks:
       - stack name: NextJS
       - stack name: TypeScript
@@ -86,28 +91,39 @@ projects:
   - image: ../../assets/spanasia_thumbnail.jpg
     title: Span Asia
     link: https://www.spanasiacarrier.com/
-    body: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book.
+    body: >-
+      Philippine Span Asia Carrier Corporation (PSACC), a leading domestic
+      shipping line in the Philippines. The goal of the project was to build a
+      fast, accessible, and visually cohesive website that communicates the
+      company’s services, vessel schedules, and shipping operations while
+      remaining easy to maintain through a lightweight content management
+      system.
+
+
+      I led the creation of a custom design system using Radix UI primitives, before the emergence of frameworks like ShadCN. 
     stacks:
       - stack name: React
       - stack name: TypeScript
       - stack name: SCSS
       - stack name: RadixUI
       - stack name: Umbraco CMS
+      - stack name: GraphQL
   - image: ../../assets/jfe_thumbnail.jpg
     title: JFE Engineering
     link: https://jfem.com.my/
-    body: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book.
+    body: The goal of the project was to provide JFE’s regional offices in Malaysia
+      and Vietnam with fast, secure, and easily maintainable websites that
+      aligned with JFE’s global brand. Each site serves as a digital portal for
+      sharing corporate information, showcasing services, and enabling
+      communication with local clients and partners. Given the multinational
+      scope, the websites were developed with multilingual support and optimized
+      for performance and scalability.
     stacks:
       - stack name: React
       - stack name: TypeScript
       - stack name: SCSS
       - stack name: Netlify CMS
+      - stack name: GraphQL
 socials:
   - image: ../../assets/github-logo.svg
     link: https://github.com/aarondotdev

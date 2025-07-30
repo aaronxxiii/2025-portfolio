@@ -124,6 +124,26 @@ projects:
       - stack name: SCSS
       - stack name: Netlify CMS
       - stack name: GraphQL
+  - body: "**Daimasu** isa high-end Japanese dining establishment in the
+      Philippines, I played a key role in optimizing the website’s performance,
+      user experience, and internationalization. I implemented custom local font
+      loading via `next/font/local`, paired with precise fallback strategies and
+      layout constraints to eliminate layout shifts and improve Core Web Vitals
+      such as **Cumulative Layout Shift (CLS)**. To further enhance perceived
+      speed and load performance, I applied server-side rendering and static
+      generation techniques using Next.js, reducing **Time to First Byte
+      (TTFB)** and improving **Largest Contentful Paint (LCP)**. For dynamic
+      user interaction, I integrated **SWR Infinite** to power a load-on-scroll
+      experience in the menu section, enabling seamless pagination of food items
+      without full page reloads — a feature especially useful on mobile. I also
+      implemented **multilingual support** using `next-intl.`"
+    image: ../../assets/daimasu.png
+    title: Daimasu
+    stacks:
+      - stack name: NextJS
+      - stack name: TypeScript
+      - stack name: Tailwind
+      - stack name: Laravel
 socials:
   - image: ../../assets/github-logo.svg
     link: https://github.com/aarondotdev

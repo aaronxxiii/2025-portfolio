@@ -118,13 +118,7 @@ projects:
       efficiency and regulatory compliance across the organization. Transport
       OPS is integrated with **LogiNext**, enabling features like optimized
       route planning, real-time GPS tracking of trucks, and automated status
-      updates for container movements. My role involved building key interface
-      components that allowed operations officers to manage truck bookings,
-      monitor third-party fleet availability, and coordinate container pickups
-      and deliveries. I also helped implement modules for **port and terminal
-      logistics**, including berth assignment workflows, loading/discharge list
-      generation, and container yard monitoring to maintain ≤ 80% capacity and
-      reduce container dwell time to under 4 days."
+      updates for container movements."
     stacks:
       - stack name: .NET
       - stack name: .NET Blazor

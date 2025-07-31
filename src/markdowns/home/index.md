@@ -109,6 +109,28 @@ projects:
       - stack name: ShadCN
       - stack name: Laravel
   - image: ../../assets/spanasia_thumbnail.jpg
+    title: SpanAsia Transport Management
+    body: "**Transport OPS** is acomprehensive logistics and operations management
+      system designed to streamline and digitize daily transport operations
+      within **SpanAsia**. The platform’s core purpose is to provide real-time
+      visibility and centralized control over container movement, fleet
+      coordination, and terminal logistics — ultimately enhancing operational
+      efficiency and regulatory compliance across the organization. Transport
+      OPS is integrated with **LogiNext**, enabling features like optimized
+      route planning, real-time GPS tracking of trucks, and automated status
+      updates for container movements. My role involved building key interface
+      components that allowed operations officers to manage truck bookings,
+      monitor third-party fleet availability, and coordinate container pickups
+      and deliveries. I also helped implement modules for **port and terminal
+      logistics**, including berth assignment workflows, loading/discharge list
+      generation, and container yard monitoring to maintain ≤ 80% capacity and
+      reduce container dwell time to under 4 days."
+    stacks:
+      - stack name: .NET
+      - stack name: .NET Blazor
+      - stack name: KendoUI
+      - stack name: MySQL
+  - image: ../../assets/spanasia_thumbnail.jpg
     title: Span Asia
     link: https://www.spanasiacarrier.com/
     body: >-

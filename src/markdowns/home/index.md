@@ -108,7 +108,7 @@ projects:
       - stack name: Tailwind
       - stack name: ShadCN
       - stack name: Laravel
-  - image: ../../assets/spanasia_thumbnail.jpg
+  - image: ../../assets/landscape-placeholder-e1608289113759.png
     title: Transport Ops
     body: "**Transport Ops** is a comprehensive logistics and operations management
       system designed to streamline and digitize daily transport operations

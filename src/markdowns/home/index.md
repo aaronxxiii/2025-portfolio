@@ -109,8 +109,8 @@ projects:
       - stack name: ShadCN
       - stack name: Laravel
   - image: ../../assets/spanasia_thumbnail.jpg
-    title: SpanAsia Transport Management
-    body: "**Transport OPS** is acomprehensive logistics and operations management
+    title: Transport Ops
+    body: "**Transport Ops** is a comprehensive logistics and operations management
       system designed to streamline and digitize daily transport operations
       within **SpanAsia**. The platform’s core purpose is to provide real-time
       visibility and centralized control over container movement, fleet

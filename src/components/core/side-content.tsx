@@ -62,7 +62,7 @@ function SideContent() {
         </div>
 
         <a
-          href={withPrefix("/resume.pdf")}
+          href={withPrefix("/Aaron_Malabanan_Resume.pdf.pdf")}
           download="Aaron_Malabanan_Resume.pdf"
           className="text-black mt-2"
           aria-label="Download my resume (PDF)"

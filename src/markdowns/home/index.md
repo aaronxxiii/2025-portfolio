@@ -87,6 +87,7 @@ projects:
     image: ../../assets/daimasu.png
     title: Daimasu
     stacks:
+      - stack name: ReactJS
       - stack name: NextJS
       - stack name: TypeScript
       - stack name: Tailwind
@@ -103,6 +104,7 @@ projects:
 
       I was responsible for building modular, responsive UI components using Next.js and Tailwind CSS, integrated with Zustand for state management and React Hook Form for flexible form workflows. The system supports role-based access, dynamic permissions, and authenticated routing using NextAuth allowing secure and personalized access across multiple user tiers.
     stacks:
+      - stack name: ReactJS
       - stack name: NextJS
       - stack name: TypeScript
       - stack name: Tailwind
@@ -138,7 +140,7 @@ projects:
 
       I led the creation of a custom design system using Radix UI primitives, before the emergence of frameworks like ShadCN. 
     stacks:
-      - stack name: React
+      - stack name: ReactJS
       - stack name: TypeScript
       - stack name: SCSS
       - stack name: RadixUI
@@ -155,7 +157,7 @@ projects:
       scope, the websites were developed with multilingual support and optimized
       for performance and scalability.
     stacks:
-      - stack name: React
+      - stack name: ReactJS
       - stack name: TypeScript
       - stack name: SCSS
       - stack name: Netlify CMS

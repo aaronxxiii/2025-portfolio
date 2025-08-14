@@ -1,14 +1,14 @@
 import React from "react";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import ReactMarkdown from "react-markdown";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { withPrefix } from "gatsby";
 
 function SideContent() {
   const data = useStaticQuery(graphql`
@@ -37,8 +37,6 @@ function SideContent() {
   const body = data?.markdownRemark?.frontmatter?.about?.body;
   const socials = data?.markdownRemark?.frontmatter?.socials;
 
-  console.log(data);
-
   const navigationArray = [
     {
       label: "ABOUT",
@@ -64,7 +62,7 @@ function SideContent() {
         </div>
 
         <a
-          href="/resume.pdf"
+          href={withPrefix("resume.pdf")}
           download="Aaron_Malabanan_Resume.pdf"
           className="text-black mt-2"
           aria-label="Download my resume (PDF)"

@@ -5,9 +5,9 @@ import SideContent from "@/components/core/side-content";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <div className="flex justify-between flex-col md:flex-row max-w-[1280px] mx-auto !scroll-smooth">
+    <div className="flex flex-col md:flex-row max-w-[1280px] mx-auto !scroll-smooth">
       <SideContent />
-      <main className="m-0 p-0 leading-relaxed px-6 md:px-24">
+      <main className="m-0 p-0 leading-relaxed px-6 md:px-24 ml-0 md:ml-[400px]">
         <MainContent />
       </main>
     </div>

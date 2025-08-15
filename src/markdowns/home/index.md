@@ -34,6 +34,7 @@ experiences:
       cross-functional teams including backend engineers, designers, and product
       managers to deliver seamless and intuitive user experiences.
     stacks:
+      - stack name: ReactJS
       - stack name: Nextjs
       - stack name: TypeScript
       - stack name: Tailwind
@@ -51,6 +52,7 @@ experiences:
       designers, backend developers, QA engineers, and product stakeholders to
       ensure technical alignment, design fidelity, and user satisfaction.
     stacks:
+      - stack name: ReactJS
       - stack name: GatsbyJS
       - stack name: TypeScript
       - stack name: SCSS

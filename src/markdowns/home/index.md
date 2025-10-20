@@ -1,26 +1,14 @@
 ---
 templateKey: home
-about:
-  name: Aaron Jay
-  title: Front End Engineer
-  body: I build fast, accessible, and visually precise experiences for the modern
-    web.
-overview:
-  body: >-
-    I’m a developer passionate about crafting accessible, pixel-perfect user
-    interfaces that blend thoughtful design with robust engineering.
-
-
-
-    My favorite work lives at the intersection of design and development—creating experiences that not only look great but are meticulously built for performance and usability. 
-
-
-
-    Currently, I'm a Front-End Engineer at Betrnk, specializing in development. I help design, build, and maintain the UI components that power Betrnk's frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.
-
-
-
-    In the past, I’ve developed CMS projects for international clients and built software across agencies, companies, and businesses in industries ranging from digital media to tech. 
+socials:
+  - image: ../../assets/github-logo.svg
+    link: https://github.com/aarondotdev
+    title: Github
+  - image: ../../assets/linkedin-logo.svg
+    title: LinkedIn
+    link: https://www.linkedin.com/in/aaronmlbnn/
+videoBanner:
+  altText: test
 experiences:
   - date: Jul 2024 - Present
     company:
@@ -72,6 +60,28 @@ experiences:
       - stack name: Laravel
     company:
       name: Rakso CT
+about:
+  name: Aaron Jay
+  title: Front End Engineer
+  body: I build fast, accessible, and visually precise experiences for the modern
+    web.
+title: test
+overview:
+  body: >-
+    I’m a developer passionate about crafting accessible, pixel-perfect user
+    interfaces that blend thoughtful design with robust engineering.
+
+
+
+    My favorite work lives at the intersection of design and development—creating experiences that not only look great but are meticulously built for performance and usability. 
+
+
+
+    Currently, I'm a Front-End Engineer at Betrnk, specializing in development. I help design, build, and maintain the UI components that power Betrnk's frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.
+
+
+
+    In the past, I’ve developed CMS projects for international clients and built software across agencies, companies, and businesses in industries ranging from digital media to tech. 
 projects:
   - body: "**Daimasu** is a high-end Japanese dining establishment in the
       Philippines, I played a key role in optimizing the website’s performance,
@@ -164,13 +174,6 @@ projects:
       - stack name: SCSS
       - stack name: Netlify CMS
       - stack name: GraphQL
-socials:
-  - image: ../../assets/github-logo.svg
-    link: https://github.com/aarondotdev
-    title: Github
-  - image: ../../assets/linkedin-logo.svg
-    title: LinkedIn
-    link: https://www.linkedin.com/in/aaronmlbnn/
 footer:
   body: Built with **GatsbyJS**, **NetlifyCMS** and **Tailwind CSS**, deployed
     with Netlify.

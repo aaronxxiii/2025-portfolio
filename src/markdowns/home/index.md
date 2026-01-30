@@ -9,6 +9,11 @@ socials:
     link: https://www.linkedin.com/in/aaronmlbnn/
 videoBanner:
   altText: test
+about:
+  name: Aaron Jay
+  title: Front End Engineer
+  body: I build fast, accessible, and visually precise experiences for the modern
+    web.
 experiences:
   - date: Jul 2024 - Present
     company:
@@ -60,11 +65,6 @@ experiences:
       - stack name: Laravel
     company:
       name: Rakso CT
-about:
-  name: Aaron Jay
-  title: Front End Engineer
-  body: I build fast, accessible, and visually precise experiences for the modern
-    web.
 title: test
 overview:
   body: >-
@@ -83,19 +83,18 @@ overview:
 
     In the past, I’ve developed CMS projects for international clients and built software across agencies, companies, and businesses in industries ranging from digital media to tech. 
 projects:
-  - body: "**Daimasu** is a high-end Japanese dining establishment in the
-      Philippines, I played a key role in optimizing the website’s performance,
-      user experience, and internationalization. I implemented custom local font
-      loading via `next/font/local`, paired with precise fallback strategies and
-      layout constraints to eliminate layout shifts and improve Core Web Vitals
-      such as **Cumulative Layout Shift (CLS)**. To further enhance perceived
-      speed and load performance, I applied server-side rendering and static
-      generation techniques using Next.js, reducing **Time to First Byte
-      (TTFB)** and improving **Largest Contentful Paint (LCP)**. For dynamic
-      user interaction, I integrated **SWR Infinite** to power a load-on-scroll
-      experience in the menu section, enabling seamless pagination of food items
-      without full page reloads — a feature especially useful on mobile. I also
-      implemented **multilingual support** using `next-intl.`"
+  - body: >-
+      **Daimasu** is a high-end Japanese dining establishment in the
+      Philippines. I created their website entirely through AI-assisted
+      development, using **Figma MCP** and **Claude** to transform design files
+      directly into production-ready code—without writing code manually. This
+      approach demonstrated how AI tooling can streamline the
+      design-to-development pipeline while maintaining high standards for
+      performance and user experience.
+
+
+
+      Claude accelerated development by generating well-structured boilerplate and applying modern web development best practices automatically—from performance optimizations and rendering strategies to component architecture and data fetching patterns. The AI consistently produced clean, maintainable code that required minimal manual refinement, showcasing how AI can handle the full spectrum of frontend development tasks.
     image: ../../assets/daimasu.png
     title: Daimasu
     stacks:
@@ -104,6 +103,7 @@ projects:
       - stack name: TypeScript
       - stack name: Tailwind
       - stack name: Laravel
+      - stack name: Claude Code
   - image: ../../assets/betrnk_thumbnail.jpg
     title: Betrnk Cage
     body: >-

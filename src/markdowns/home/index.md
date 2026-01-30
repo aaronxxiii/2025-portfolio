@@ -94,6 +94,7 @@ projects:
 
 
 
+
       Claude accelerated development by generating well-structured boilerplate and applying modern web development best practices automatically—from performance optimizations and rendering strategies to component architecture and data fetching patterns. The AI consistently produced clean, maintainable code that required minimal manual refinement, showcasing how AI can handle the full spectrum of frontend development tasks.
     image: ../../assets/daimasu.png
     title: Daimasu

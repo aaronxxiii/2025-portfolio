@@ -2,8 +2,12 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `gatsby-ts-netlify`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Aaron Jay Malabanan | Front End Engineer`,
+    siteUrl: `https://aarondotdev.com`,
+    description: `Front End Engineer specializing in building fast, accessible, and pixel-perfect user interfaces. Currently at Betrnk, crafting performant web experiences with React, Next.js, and TypeScript.`,
+    author: `Aaron Jay Malabanan`,
+    image: `/og-image.png`,
+    twitterUsername: `@aarondotdev`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -17,6 +21,12 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: "Aaron Jay Malabanan | Front End Engineer",
+        short_name: "Aaron Jay",
+        start_url: "/",
+        background_color: "#0a0a0a",
+        theme_color: "#0073AF",
+        display: "standalone",
         icon: "src/images/icon.png",
       },
     },

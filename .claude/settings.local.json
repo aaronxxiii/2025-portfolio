@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/generate-og-image.js:*)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}

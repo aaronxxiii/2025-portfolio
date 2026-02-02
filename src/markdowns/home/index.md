@@ -9,6 +9,11 @@ socials:
     link: https://www.linkedin.com/in/aaronmlbnn/
 videoBanner:
   altText: test
+about:
+  name: Aaron Jay
+  title: Front End Engineer
+  body: I build fast, accessible, and visually precise experiences for the modern
+    web.
 experiences:
   - date: Jul 2024 - Present
     company:
@@ -60,11 +65,6 @@ experiences:
       - stack name: Laravel
     company:
       name: Rakso CT
-about:
-  name: Aaron Jay
-  title: Front End Engineer
-  body: I build fast, accessible, and visually precise experiences for the modern
-    web.
 title: test
 overview:
   body: >-
@@ -83,19 +83,19 @@ overview:
 
     In the past, I’ve developed CMS projects for international clients and built software across agencies, companies, and businesses in industries ranging from digital media to tech. 
 projects:
-  - body: "**Daimasu** is a high-end Japanese dining establishment in the
-      Philippines, I played a key role in optimizing the website’s performance,
-      user experience, and internationalization. I implemented custom local font
-      loading via `next/font/local`, paired with precise fallback strategies and
-      layout constraints to eliminate layout shifts and improve Core Web Vitals
-      such as **Cumulative Layout Shift (CLS)**. To further enhance perceived
-      speed and load performance, I applied server-side rendering and static
-      generation techniques using Next.js, reducing **Time to First Byte
-      (TTFB)** and improving **Largest Contentful Paint (LCP)**. For dynamic
-      user interaction, I integrated **SWR Infinite** to power a load-on-scroll
-      experience in the menu section, enabling seamless pagination of food items
-      without full page reloads — a feature especially useful on mobile. I also
-      implemented **multilingual support** using `next-intl.`"
+  - body: >-
+      **Daimasu** is a high-end Japanese dining establishment in the
+      Philippines. I created their website entirely through AI-assisted
+      development, using **Figma MCP** and **Claude** to transform design files
+      directly into production-ready code—without writing code manually. This
+      approach demonstrated how AI tooling can streamline the
+      design-to-development pipeline while maintaining high standards for
+      performance and user experience.
+
+
+
+
+      Claude accelerated development by generating well-structured boilerplate and applying modern web development best practices automatically—from performance optimizations and rendering strategies to component architecture and data fetching patterns. The AI consistently produced clean, maintainable code that required minimal manual refinement, showcasing how AI can handle the full spectrum of frontend development tasks.
     image: ../../assets/daimasu.png
     title: Daimasu
     stacks:
@@ -104,6 +104,24 @@ projects:
       - stack name: TypeScript
       - stack name: Tailwind
       - stack name: Laravel
+      - stack name: Claude Code
+  - image: ../../assets/vortexwear.png
+    title: Vortexwear PH
+    link: https://vortexwearph.com/?_cd=d3b73627c8643abc5d5582b36ac8a870ded1db3e26cf5ac9431566366e248d26&_uid=121714311461&preview_theme_id=182196273445&preview_token=gr4eeo84ijpd7kqivh3xribajn4ags5b
+    stacks:
+      - stack name: Liquid
+      - stack name: CSS/SCSS
+      - stack name: JavaScript
+      - stack name: Shopify CLI
+      - stack name: Augment Code
+    body: A Shopify storefront built on a customized Liquid theme, extending an
+      existing base theme architecture. Development was accelerated using
+      Augment Code as an AI-assisted coding tool to modify theme templates,
+      sections, and snippets. Customizations include tailored Liquid template
+      logic, custom CSS/SCSS styling, and JavaScript enhancements integrated
+      within Shopify's theme structure. The theme leverages Shopify's section
+      schema for merchant-configurable components while maintaining
+      compatibility with Shopify's Online Store 2.0 framework.
   - image: ../../assets/betrnk_thumbnail.jpg
     title: Betrnk Cage
     body: >-
@@ -161,13 +179,9 @@ projects:
   - image: ../../assets/jfe_thumbnail.jpg
     title: JFE Engineering
     link: https://jfem.com.my/
-    body: The goal of the project was to provide JFE’s regional offices in Malaysia
-      and Vietnam with fast, secure, and easily maintainable websites that
-      aligned with JFE’s global brand. Each site serves as a digital portal for
-      sharing corporate information, showcasing services, and enabling
-      communication with local clients and partners. Given the multinational
-      scope, the websites were developed with multilingual support and optimized
-      for performance and scalability.
+    body: >-
+      
+      A Shopify storefront built on a customized Liquid theme, extending an existing base theme architecture. Development was accelerated using Augment Code as an AI-assisted coding tool to modify theme templates, sections, and snippets. Customizations include tailored Liquid template logic, custom CSS/SCSS styling, and JavaScript enhancements integrated within Shopify's theme structure. The theme leverages Shopify's section schema for merchant-configurable components while maintaining compatibility with Shopify's Online Store 2.0 framework.
     stacks:
       - stack name: ReactJS
       - stack name: TypeScript

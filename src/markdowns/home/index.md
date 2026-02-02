@@ -114,6 +114,14 @@ projects:
       - stack name: JavaScript
       - stack name: Shopify CLI
       - stack name: Augment Code
+    body: A Shopify storefront built on a customized Liquid theme, extending an
+      existing base theme architecture. Development was accelerated using
+      Augment Code as an AI-assisted coding tool to modify theme templates,
+      sections, and snippets. Customizations include tailored Liquid template
+      logic, custom CSS/SCSS styling, and JavaScript enhancements integrated
+      within Shopify's theme structure. The theme leverages Shopify's section
+      schema for merchant-configurable components while maintaining
+      compatibility with Shopify's Online Store 2.0 framework.
   - image: ../../assets/betrnk_thumbnail.jpg
     title: Betrnk Cage
     body: >-

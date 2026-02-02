@@ -105,6 +105,15 @@ projects:
       - stack name: Tailwind
       - stack name: Laravel
       - stack name: Claude Code
+  - image: ../../assets/vortexwear.png
+    title: Vortexwear PH
+    link: https://vortexwearph.com/?_cd=d3b73627c8643abc5d5582b36ac8a870ded1db3e26cf5ac9431566366e248d26&_uid=121714311461&preview_theme_id=182196273445&preview_token=gr4eeo84ijpd7kqivh3xribajn4ags5b
+    stacks:
+      - stack name: Liquid
+      - stack name: CSS/SCSS
+      - stack name: JavaScript
+      - stack name: Shopify CLI
+      - stack name: Augment Code
   - image: ../../assets/betrnk_thumbnail.jpg
     title: Betrnk Cage
     body: >-
@@ -162,13 +171,9 @@ projects:
   - image: ../../assets/jfe_thumbnail.jpg
     title: JFE Engineering
     link: https://jfem.com.my/
-    body: The goal of the project was to provide JFE’s regional offices in Malaysia
-      and Vietnam with fast, secure, and easily maintainable websites that
-      aligned with JFE’s global brand. Each site serves as a digital portal for
-      sharing corporate information, showcasing services, and enabling
-      communication with local clients and partners. Given the multinational
-      scope, the websites were developed with multilingual support and optimized
-      for performance and scalability.
+    body: >-
+      
+      A Shopify storefront built on a customized Liquid theme, extending an existing base theme architecture. Development was accelerated using Augment Code as an AI-assisted coding tool to modify theme templates, sections, and snippets. Customizations include tailored Liquid template logic, custom CSS/SCSS styling, and JavaScript enhancements integrated within Shopify's theme structure. The theme leverages Shopify's section schema for merchant-configurable components while maintaining compatibility with Shopify's Online Store 2.0 framework.
     stacks:
       - stack name: ReactJS
       - stack name: TypeScript

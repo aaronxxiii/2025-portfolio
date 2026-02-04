@@ -17,7 +17,7 @@ about:
 experiences:
   - date: Jul 2024 - Present
     company:
-      name: Betrnk
+      name: BK Keyforce
     title: Front End Engineer
     body: As a Frontend Engineer at Betrnk, I play a key role in architecting and
       developing robust, scalable, and performant user interfaces for

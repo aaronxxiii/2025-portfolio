@@ -83,7 +83,8 @@ overview:
 
     In the past, I’ve developed CMS projects for international clients and built software across agencies, companies, and businesses in industries ranging from digital media to tech. 
 projects:
-  - body: >-
+  - hidden: false
+    body: >-
       **Daimasu** is a high-end Japanese dining establishment in the
       Philippines. I created their website entirely through AI-assisted
       development, using **Figma MCP** and **Claude** to transform design files
@@ -105,7 +106,8 @@ projects:
       - stack name: Tailwind
       - stack name: Laravel
       - stack name: Claude Code
-  - image: ../../assets/vortexwear.png
+  - hidden: false
+    image: ../../assets/vortexwear.png
     title: Vortexwear PH
     link: https://vortexwearph.com/?_cd=d3b73627c8643abc5d5582b36ac8a870ded1db3e26cf5ac9431566366e248d26&_uid=121714311461&preview_theme_id=182196273445&preview_token=gr4eeo84ijpd7kqivh3xribajn4ags5b
     stacks:
@@ -122,7 +124,8 @@ projects:
       within Shopify's theme structure. The theme leverages Shopify's section
       schema for merchant-configurable components while maintaining
       compatibility with Shopify's Online Store 2.0 framework.
-  - image: ../../assets/betrnk_thumbnail.jpg
+  - hidden: false
+    image: ../../assets/betrnk_thumbnail.jpg
     title: Betrnk Cage
     body: >-
       The Cage System is an internal project management and operations dashboard
@@ -140,7 +143,8 @@ projects:
       - stack name: Tailwind
       - stack name: ShadCN
       - stack name: Laravel
-  - image: ../../assets/landscape-placeholder-e1608289113759.png
+  - hidden: false
+    image: ../../assets/landscape-placeholder-e1608289113759.png
     title: Transport Ops
     body: "**Transport Ops** is a comprehensive logistics and operations management
       system designed to streamline and digitize daily transport operations
@@ -156,7 +160,8 @@ projects:
       - stack name: .NET Blazor
       - stack name: KendoUI
       - stack name: MySQL
-  - image: ../../assets/spanasia_thumbnail.jpg
+  - hidden: false
+    image: ../../assets/spanasia_thumbnail.jpg
     title: Span Asia
     link: https://www.spanasiacarrier.com/
     body: >-
@@ -176,7 +181,8 @@ projects:
       - stack name: RadixUI
       - stack name: Umbraco CMS
       - stack name: GraphQL
-  - image: ../../assets/jfe_thumbnail.jpg
+  - hidden: false
+    image: ../../assets/jfe_thumbnail.jpg
     title: JFE Engineering
     link: https://jfem.com.my/
     body: >-

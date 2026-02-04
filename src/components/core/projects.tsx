@@ -12,6 +12,7 @@ function projects() {
       markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
         frontmatter {
           projects {
+            hidden
             image {
                 childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, formats: WEBP)
@@ -29,7 +30,9 @@ function projects() {
     }
   `);
 
-  const projects = data?.markdownRemark?.frontmatter?.projects
+  const projects = data?.markdownRemark?.frontmatter?.projects?.filter(
+    (project: any) => !project?.hidden
+  )
 
   return (
     <div className="flex flex-col gap-y-12">

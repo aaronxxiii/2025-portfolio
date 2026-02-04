@@ -78,6 +78,13 @@ collections:
             widget: "list"
             fields:
               - {
+                  label: "Hidden",
+                  name: "hidden",
+                  widget: "boolean",
+                  default: false,
+                  hint: "Toggle to hide this project from the website",
+                }
+              - {
                   label: "Image",
                   name: image,
                   widget: image,

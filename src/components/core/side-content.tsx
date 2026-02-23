@@ -50,6 +50,10 @@ function SideContent() {
       label: "PROJECTS",
       value: "#projects",
     },
+    {
+      label: "GITHUB",
+      value: "#github",
+    },
   ];
 
   return (

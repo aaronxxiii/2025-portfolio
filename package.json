@@ -42,7 +42,6 @@
     "postcss": "^8.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-github-calendar": "^5.0.5",
     "react-icons": "^5.5.0",
     "react-markdown": "^10.1.0",
     "shadcn": "^2.5.0",

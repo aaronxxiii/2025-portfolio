@@ -1,6 +1,5 @@
 import Experiences from "@/components/core/experiences";
 import Footer from "@/components/core/footer";
-import GithubCalendar from "@/components/core/github-calendar";
 import Projects from "@/components/core/projects";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
@@ -45,8 +44,7 @@ function MainContent() {
       <section id="projects" className="h-[100vh] pt-24 max-w-3xl mx-auto">
         <Projects />
       </section>
-      <section id="github" className="pt-24 max-w-3xl mx-auto">
-        <GithubCalendar />
+      <section className="pt-24 max-w-3xl mx-auto">
         <footer className="pt-32 pb-16 text-center flex justify-center">
           <Footer />
         </footer>

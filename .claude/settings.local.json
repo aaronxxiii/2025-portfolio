@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(node scripts/generate-og-image.js:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "WebSearch",
+      "WebFetch(domain:uiverse.io)",
+      "Bash(npx gatsby:*)"
     ]
   }
 }

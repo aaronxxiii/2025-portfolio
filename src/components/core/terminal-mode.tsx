@@ -49,6 +49,7 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
             body
             link
             hidden
+            featured
           }
           socials {
             title
@@ -189,7 +190,7 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
         return (
           <div className="space-y-3">
             {fm.projects
-              .filter((p: { hidden?: boolean }) => !p.hidden)
+              .filter((p: { hidden?: boolean; featured?: boolean }) => !p.hidden && p.featured)
               .map(
                 (
                   proj: {

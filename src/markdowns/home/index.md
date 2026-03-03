@@ -143,6 +143,7 @@ skills:
       - skill_name: Jira
 projects:
   - hidden: false
+    featured: true
     hideStacks: false
     body: >-
       **Daimasu** is a high-end Japanese dining establishment in the
@@ -167,6 +168,7 @@ projects:
       - stack name: Laravel
       - stack name: Claude Code
   - hidden: false
+    featured: true
     hideStacks: false
     image: ../../assets/vortexwear.png
     title: Vortexwear PH
@@ -186,6 +188,7 @@ projects:
       schema for merchant-configurable components while maintaining
       compatibility with Shopify's Online Store 2.0 framework.
   - hidden: false
+    featured: true
     hideStacks: false
     image: ../../assets/betrnk_thumbnail.jpg
     title: Betrnk Cage
@@ -206,6 +209,7 @@ projects:
       - stack name: ShadCN
       - stack name: Laravel
   - hidden: false
+    featured: true
     hideStacks: false
     image: ../../assets/landscape-placeholder-e1608289113759.png
     title: Transport Ops
@@ -224,6 +228,7 @@ projects:
       - stack name: KendoUI
       - stack name: MySQL
   - hidden: false
+    featured: true
     hideStacks: false
     image: ../../assets/spanasia_thumbnail.jpg
     title: Span Asia
@@ -246,6 +251,7 @@ projects:
       - stack name: Umbraco CMS
       - stack name: GraphQL
   - hidden: false
+    featured: true
     hideStacks: false
     image: ../../assets/jfe_thumbnail.jpg
     title: JFE Engineering

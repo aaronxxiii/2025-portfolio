@@ -13,6 +13,7 @@ function projects() {
         frontmatter {
           projects {
             hidden
+            featured
             hideStacks
             image {
                 childImageSharp {
@@ -32,7 +33,7 @@ function projects() {
   `);
 
   const projects = data?.markdownRemark?.frontmatter?.projects?.filter(
-    (project: any) => !project?.hidden
+    (project: any) => !project?.hidden && project?.featured
   )
 
   return (

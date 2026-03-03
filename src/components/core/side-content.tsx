@@ -57,30 +57,33 @@ function SideContent() {
   ];
 
   return (
-    <header className="relative md:fixed top-0 max-w-[400px] max-h-screen md:min-h-screen w-full h-full flex flex-col gap-y-4 justify-start md:justify-between box-border py-24">
-      <div className="px-6 flex flex-col">
-        <h1 className="font-bold text-5xl m-0 p-0">{name}</h1>
-        <p className="m-0 text-lg">{title}</p>
-        <div className="mt-4">
+    <header className="w-full flex flex-col gap-y-4">
+      <div>
+        <p className="text-muted-foreground text-sm mb-1">
+          <span className="text-primary">$</span> whoami
+        </p>
+        <h1 className="font-bold text-4xl md:text-5xl m-0 p-0 text-primary">{name}</h1>
+        <p className="m-0 text-lg text-secondary">{title}</p>
+        <div className="mt-4 text-foreground">
           <ReactMarkdown>{body}</ReactMarkdown>
         </div>
 
         <a
           href={withPrefix("/Aaron_Jay_Resume.pdf")}
           download="Aaron_Jay_Resume.pdf"
-          className="text-black mt-2"
+          className="text-primary hover:underline mt-2 inline-block"
           aria-label="Download my resume (PDF)"
         >
           Download résumé
         </a>
       </div>
 
-      <nav className="hidden flex-col justify-start px-6 md:flex">
-        {navigationArray.map((item: any, index: number) => (
+      <nav className="flex flex-wrap gap-x-4 gap-y-1">
+        {navigationArray.map((item: any) => (
           <a
             className={cn(
               buttonVariants({ variant: "link" }),
-              "w-max !text-xs p-0 no-underline"
+              "!text-xs p-0 no-underline uppercase tracking-wider text-muted-foreground hover:text-primary"
             )}
             key={item?.value}
             href={item?.value}
@@ -90,25 +93,26 @@ function SideContent() {
         ))}
       </nav>
 
-      <div className="px-6">
-        <div className="socials flex items-center gap-2">
-          {socials?.map((item: any, index: number) => {
-            const logo = item?.image?.publicURL;
-            return (
-              <Tooltip>
-                {" "}
-                <TooltipTrigger asChild key={item?.title + index}>
-                  <a href={item?.link} target="_blank">
-                    <img className="w-6 h-6" src={logo} alt={item?.title} />
-                  </a>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{item?.title}</p>
-                </TooltipContent>
-              </Tooltip>
-            );
-          })}
-        </div>
+      <div className="socials flex items-center gap-2">
+        {socials?.map((item: any, index: number) => {
+          const logo = item?.image?.publicURL;
+          return (
+            <Tooltip key={item?.title + index}>
+              <TooltipTrigger asChild>
+                <a href={item?.link} target="_blank">
+                  <img
+                    className="w-6 h-6 invert brightness-200"
+                    src={logo}
+                    alt={item?.title}
+                  />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{item?.title}</p>
+              </TooltipContent>
+            </Tooltip>
+          );
+        })}
       </div>
     </header>
   );

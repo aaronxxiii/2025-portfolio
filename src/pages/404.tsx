@@ -2,9 +2,11 @@ import * as React from "react"
 import { Link, HeadFC, PageProps } from "gatsby"
 
 const pageStyles = {
-  color: "#232129",
+  color: "#d4d4d4",
+  backgroundColor: "#191919",
   padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  fontFamily: "'Source Code Pro', monospace",
+  minHeight: "100vh",
 }
 const headingStyles = {
   marginTop: 0,
@@ -16,9 +18,9 @@ const paragraphStyles = {
   marginBottom: 48,
 }
 const codeStyles = {
-  color: "#8A6534",
+  color: "#4ade80",
   padding: 4,
-  backgroundColor: "#FFF4DB",
+  backgroundColor: "#2a2a2a",
   fontSize: "1.25rem",
   borderRadius: 4,
 }
@@ -28,7 +30,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
     <main style={pageStyles}>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
+        Sorry, we couldn't find what you were looking for.
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
@@ -38,7 +40,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/" style={{ color: "#4ade80" }}>Go home</Link>.
       </p>
     </main>
   )

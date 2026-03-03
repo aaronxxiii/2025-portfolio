@@ -30,9 +30,9 @@ function experiences() {
     <div className="flex flex-col gap-y-12">
       {experiences?.map((item: any, index: number) =>
         <div className="grid grid-cols-8 justify-start relative" key={item?.title + index}>
-          <p className="text-sm whitespace-nowrap mt-1 col-span-8 md:col-span-2 font-semibold text-black/70">{item?.date}</p>
+          <p className="text-sm whitespace-nowrap mt-1 col-span-8 md:col-span-2 font-semibold text-muted-foreground">{item?.date}</p>
           <div className="col-span-8 md:col-span-6 ml-0 md:ml-10">
-            <span className="font-semibold text-lg">{item?.title} - {item?.company?.name}</span>
+            <span className="font-semibold text-lg text-primary">{item?.title} - {item?.company?.name}</span>
             <div className="mt-4 text-sm text-justify">
               <ReactMarkdown>
                 {item?.body}

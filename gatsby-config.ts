@@ -24,8 +24,8 @@ const config: GatsbyConfig = {
         name: "Aaron Jay Malabanan | Front End Engineer",
         short_name: "Aaron Jay",
         start_url: "/",
-        background_color: "#1a2a33",
-        theme_color: "#5bc0be",
+        background_color: "#191919",
+        theme_color: "#4ade80",
         display: "standalone",
         icon: "src/images/icon.png",
       },
@@ -78,7 +78,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `#0073AF`,
+        color: `#4ade80`,
         showSpinner: false,
       },
     },

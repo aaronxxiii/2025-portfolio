@@ -5,11 +5,23 @@ import SideContent from "@/components/core/side-content";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <div className="flex flex-col md:flex-row max-w-[1280px] mx-auto !scroll-smooth">
-      <SideContent />
-      <main className="m-0 p-0 leading-relaxed px-6 md:px-24 ml-0 md:ml-[400px]">
-        <MainContent />
-      </main>
+    <div className="min-h-screen bg-background p-4 md:p-8">
+      <div className="max-w-5xl mx-auto rounded-xl border border-border bg-card shadow-2xl overflow-hidden">
+        {/* Terminal title bar */}
+        <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-card">
+          <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-red)' }} />
+          <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-yellow)' }} />
+          <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-green)' }} />
+          <span className="ml-4 text-muted-foreground text-sm">bash</span>
+        </div>
+        {/* Terminal content */}
+        <div className="p-6 md:p-10">
+          <SideContent />
+          <main className="mt-10">
+            <MainContent />
+          </main>
+        </div>
+      </div>
     </div>
   );
 };

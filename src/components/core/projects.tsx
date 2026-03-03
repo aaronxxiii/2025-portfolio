@@ -48,7 +48,7 @@ function projects() {
             />
           </div>
           <div className="col-span-8 md:col-span-6 ml-0 md:ml-6">
-            <span className="font-semibold text-lg flex items-start justify-between">{item?.title} {item?.link && <ExternalLinkIcon className="w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300" />} </span>
+            <span className="font-semibold text-lg flex items-start justify-between text-primary">{item?.title} {item?.link && <ExternalLinkIcon className="w-4 h-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all duration-300" />} </span>
             <div className="mt-4 text-sm text-justify">
               <ReactMarkdown>
                 {item?.body}
@@ -58,7 +58,7 @@ function projects() {
               {item?.stacks?.map((stack: any, index: number) => (<Badge key={stack?.stack_name + index}>{stack?.stack_name}</Badge>))}
             </div>
           </div>
-          <span className="absolute -inset-6 p-6 group-hover:bg-slate-400/10 transition-all duration-300 -z-1 rounded-sm">
+          <span className="absolute -inset-6 p-6 group-hover:bg-accent transition-all duration-300 -z-1 rounded-sm">
           </span>
         </div>)
       }

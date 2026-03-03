@@ -30,26 +30,36 @@ function MainContent() {
 
   return (
     <div className="w-full">
-      {/* <ScrollBar /> */}
-      <section id="about" className="mx-auto max-w-3xl md:pt-24 pt-6">
+      <section id="about" className="pt-6">
+        <p className="text-muted-foreground text-sm mb-4">
+          <span className="text-primary">$</span> cat about.md
+        </p>
         <div className="flex flex-col gap-4 text-justify">
           <ReactMarkdown>
             {body}
           </ReactMarkdown>
         </div>
       </section>
-      <section id="experiences" className="pt-24 max-w-3xl mx-auto">
+
+      <section id="experiences" className="pt-16 border-t border-border mt-16">
+        <p className="text-muted-foreground text-sm mb-4">
+          <span className="text-primary">$</span> ls ./experiences/
+        </p>
         <Experiences />
       </section>
-      <section id="projects" className="h-[100vh] pt-24 max-w-3xl mx-auto">
+
+      <section id="projects" className="pt-16 border-t border-border mt-16">
+        <p className="text-muted-foreground text-sm mb-4">
+          <span className="text-primary">$</span> ls ./projects/
+        </p>
         <Projects />
       </section>
-      <section className="pt-24 max-w-3xl mx-auto">
-        <footer className="pt-32 pb-16 text-center flex justify-center">
+
+      <section className="pt-16 border-t border-border mt-16">
+        <footer className="pb-16 text-center flex justify-center">
           <Footer />
         </footer>
       </section>
-
     </div>
   );
 }

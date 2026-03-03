@@ -2,8 +2,11 @@ import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import MainContent from "./main-content";
 import SideContent from "@/components/core/side-content";
+import TerminalMode from "@/components/core/terminal-mode";
 
 const IndexPage: React.FC<PageProps> = () => {
+  const [terminalMode, setTerminalMode] = React.useState(false);
+
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="max-w-5xl mx-auto rounded-xl border border-border bg-card shadow-2xl overflow-hidden">
@@ -12,16 +15,31 @@ const IndexPage: React.FC<PageProps> = () => {
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-red)' }} />
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-yellow)' }} />
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-green)' }} />
-          <span className="ml-4 text-muted-foreground text-sm">bash</span>
+          <span className="ml-4 text-muted-foreground text-sm">
+            {terminalMode ? "terminal" : "bash"}
+          </span>
         </div>
         {/* Terminal content */}
-        <div className="p-6 md:p-10">
-          <SideContent />
-          <main className="mt-10">
-            <MainContent />
-          </main>
-        </div>
+        {terminalMode ? (
+          <TerminalMode onExit={() => setTerminalMode(false)} />
+        ) : (
+          <div className="p-6 md:p-10">
+            <SideContent />
+            <main className="mt-10">
+              <MainContent />
+            </main>
+          </div>
+        )}
       </div>
+
+      {/* Floating terminal toggle */}
+      <button
+        onClick={() => setTerminalMode((prev) => !prev)}
+        className="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-card border border-border shadow-lg flex items-center justify-center cursor-pointer hover:border-primary transition-colors font-mono text-primary text-lg"
+        aria-label={terminalMode ? "Exit terminal mode" : "Enter terminal mode"}
+      >
+        {terminalMode ? "×" : ">_"}
+      </button>
     </div>
   );
 };

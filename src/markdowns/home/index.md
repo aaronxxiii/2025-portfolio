@@ -12,8 +12,7 @@ videoBanner:
 about:
   name: Aaron Jay
   title: Full Stack Developer
-  body: I build and ship full stack web applications — from pixel-perfect
-    frontends to scalable backend services.
+  body: ""
 experiences:
   - hideStacks: true
     date: Jul 2024 - Present
@@ -88,13 +87,7 @@ experiences:
 title: test
 overview:
   body: >-
-    Full Stack Developer with 4+ years of professional experience building end-to-end web applications across React, Next.js, Laravel, and .NET. I specialize in translating complex requirements into production-ready systems — delivering accessible frontends, secure backend services, and scalable architectures.
-
-
-    At BK Keyforce, I’ve shipped 4 full stack projects, reduced frontend boilerplate by 40% through optimized data-fetching strategies, and cut design-to-code translation time by 60% using AI-assisted workflows. I’ve implemented authentication systems with token refresh and RBAC, established component design patterns adopted team-wide, and built end-to-end test suites with Vitest and Playwright.
-
-
-    Previously at Blackfort, I delivered 5+ web applications for international clients — adapting across React, Gatsby, and .NET stacks depending on project requirements. I leverage AI-assisted development to accelerate delivery without compromising code quality.
+    I'm a developer with 4+ years of experience building web applications from front to back. I enjoy turning ideas into real, working products — writing clean code, solving hard problems, and shipping things that people actually use.
 skills:
   - category: Frontend
     items:

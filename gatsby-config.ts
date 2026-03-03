@@ -2,9 +2,9 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Aaron Jay Malabanan | Front End Engineer`,
+    title: `Aaron Jay Malabanan | Full Stack Developer`,
     siteUrl: `https://aarondotdev.com`,
-    description: `Front End Engineer specializing in building fast, accessible, and pixel-perfect user interfaces. Currently at Betrnk, crafting performant web experiences with React, Next.js, and TypeScript.`,
+    description: `Full Stack Developer with 4+ years of experience building web applications from front to back. Specializing in React, Next.js, TypeScript, and Laravel.`,
     author: `Aaron Jay Malabanan`,
     image: `/og-image.png`,
     twitterUsername: `@aarondotdev`,
@@ -21,7 +21,7 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Aaron Jay Malabanan | Front End Engineer",
+        name: "Aaron Jay Malabanan | Full Stack Developer",
         short_name: "Aaron Jay",
         start_url: "/",
         background_color: "#191919",

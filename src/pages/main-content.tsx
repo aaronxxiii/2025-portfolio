@@ -1,5 +1,6 @@
 import Experiences from "@/components/core/experiences";
 import Footer from "@/components/core/footer";
+import GithubCalendar from "@/components/core/github-calendar";
 import Projects from "@/components/core/projects";
 import Skills from "@/components/core/skills";
 import { graphql, useStaticQuery } from "gatsby";
@@ -47,6 +48,13 @@ function MainContent() {
           <span className="text-primary">$</span> cat skills.md
         </p>
         <Skills />
+      </section>
+
+      <section id="github" className="pt-16 border-t border-border mt-16">
+        <p className="text-muted-foreground text-sm mb-4">
+          <span className="text-primary">$</span> gh contribution-graph
+        </p>
+        <GithubCalendar />
       </section>
 
       <section id="experiences" className="pt-16 border-t border-border mt-16">

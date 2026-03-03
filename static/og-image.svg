@@ -1,12 +1,8 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a2a33"/>
-      <stop offset="100%" style="stop-color:#243642"/>
-    </linearGradient>
-    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#5bc0be"/>
-      <stop offset="100%" style="stop-color:#6fffe9"/>
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#191919"/>
     </linearGradient>
   </defs>
 
@@ -15,39 +11,47 @@
 
   <!-- Subtle grid pattern -->
   <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#5bc0be" stroke-width="0.5" opacity="0.05"/>
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#4ade80" stroke-width="0.5" opacity="0.04"/>
   </pattern>
   <rect width="1200" height="630" fill="url(#grid)"/>
 
-  <!-- Accent line -->
-  <rect x="100" y="200" width="80" height="4" rx="1" fill="url(#accentGradient)"/>
+  <!-- Terminal title bar -->
+  <rect x="80" y="80" width="1040" height="40" rx="8" ry="8" fill="#1a1a1a"/>
+  <rect x="80" y="100" width="1040" height="20" fill="#1a1a1a"/>
+  <circle cx="108" cy="100" r="7" fill="#ff5f57"/>
+  <circle cx="132" cy="100" r="7" fill="#febc2e"/>
+  <circle cx="156" cy="100" r="7" fill="#28c840"/>
+  <text x="560" y="105" font-family="'SF Mono', 'Source Code Pro', monospace" font-size="14" font-weight="400" fill="#666" text-anchor="middle">bash</text>
+
+  <!-- Terminal body -->
+  <rect x="80" y="120" width="1040" height="430" fill="#141414" rx="0" ry="0"/>
+  <rect x="80" y="538" width="1040" height="12" rx="0" ry="0" fill="#141414"/>
+  <rect x="80" y="538" width="1040" height="12" rx="0" ry="8" fill="#141414"/>
+
+  <!-- Prompt line -->
+  <text x="120" y="180" font-family="'SF Mono', 'Source Code Pro', monospace" font-size="18" font-weight="400" fill="#4ade80">$</text>
+  <text x="145" y="180" font-family="'SF Mono', 'Source Code Pro', monospace" font-size="18" font-weight="400" fill="#888">whoami</text>
 
   <!-- Name -->
-  <text x="100" y="280" font-family="'Source Code Pro', monospace" font-size="72" font-weight="700" fill="#5bc0be">
+  <text x="120" y="250" font-family="'SF Mono', 'Source Code Pro', monospace" font-size="56" font-weight="700" fill="#4ade80">
     Aaron Jay Malabanan
   </text>
 
   <!-- Title -->
-  <text x="100" y="340" font-family="'Source Code Pro', monospace" font-size="36" font-weight="400" fill="#8ec8c8">
-    Front End Engineer
+  <text x="120" y="310" font-family="'SF Mono', 'Source Code Pro', monospace" font-size="28" font-weight="400" fill="#888">
+    Full Stack Developer
   </text>
 
   <!-- Tagline -->
-  <text x="100" y="420" font-family="'Source Code Pro', monospace" font-size="24" font-weight="400" fill="#5a8a8a">
-    Building fast, accessible, and pixel-perfect web experiences
+  <text x="120" y="380" font-family="'SF Mono', 'Source Code Pro', monospace" font-size="20" font-weight="400" fill="#555">
+    Building web applications from front to back
   </text>
 
-  <!-- Domain -->
-  <text x="100" y="530" font-family="'Source Code Pro', monospace" font-size="22" font-weight="500" fill="#5bc0be">
-    aarondotdev.com
-  </text>
+  <!-- Domain with prompt -->
+  <text x="120" y="460" font-family="'SF Mono', 'Source Code Pro', monospace" font-size="18" font-weight="400" fill="#4ade80">$</text>
+  <text x="145" y="460" font-family="'SF Mono', 'Source Code Pro', monospace" font-size="18" font-weight="400" fill="#888">open</text>
+  <text x="195" y="460" font-family="'SF Mono', 'Source Code Pro', monospace" font-size="18" font-weight="500" fill="#4ade80">aarondotdev.com</text>
 
-  <!-- Decorative elements -->
-  <circle cx="1050" cy="150" r="100" fill="#5bc0be" opacity="0.08"/>
-  <circle cx="1100" cy="500" r="150" fill="#5bc0be" opacity="0.04"/>
-
-  <!-- Terminal-style decorative brackets -->
-  <text x="1020" y="320" font-family="'Source Code Pro', monospace" font-size="120" font-weight="300" fill="#5bc0be" opacity="0.1">
-    &gt;_
-  </text>
+  <!-- Blinking cursor -->
+  <rect x="120" y="490" width="10" height="20" fill="#4ade80" opacity="0.8"/>
 </svg>

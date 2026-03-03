@@ -30,9 +30,9 @@ export default IndexPage;
 
 export const Head: HeadFC = () => {
   const siteUrl = "https://aarondotdev.com";
-  const title = "Aaron Jay Malabanan | Front End Engineer";
+  const title = "Aaron Jay Malabanan | Full Stack Developer";
   const description =
-    "Front End Engineer specializing in building fast, accessible, and pixel-perfect user interfaces. Currently at Betrnk, crafting performant web experiences with React, Next.js, and TypeScript.";
+    "Full Stack Developer with 4+ years of experience building web applications from front to back. Specializing in React, Next.js, TypeScript, and Laravel.";
   const image = `${siteUrl}/og-image.png`;
 
   const structuredData = {
@@ -40,10 +40,10 @@ export const Head: HeadFC = () => {
     "@type": "Person",
     name: "Aaron Jay Malabanan",
     url: siteUrl,
-    jobTitle: "Front End Engineer",
+    jobTitle: "Full Stack Developer",
     worksFor: {
       "@type": "Organization",
-      name: "Betrnk",
+      name: "BK Keyforce",
     },
     sameAs: [
       "https://github.com/aarondotdev",
@@ -54,8 +54,10 @@ export const Head: HeadFC = () => {
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Front End Development",
-      "Web Accessibility",
+      "Laravel",
+      "Node.js",
+      "GraphQL",
+      "Full Stack Development",
     ],
   };
 
@@ -85,7 +87,7 @@ export const Head: HeadFC = () => {
       {/* Additional SEO */}
       <meta
         name="keywords"
-        content="Front End Engineer, React Developer, Next.js, TypeScript, Web Developer, UI Developer, Aaron Jay Malabanan"
+        content="Full Stack Developer, React Developer, Next.js, TypeScript, Laravel, Node.js, Web Developer, Aaron Jay Malabanan"
       />
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />

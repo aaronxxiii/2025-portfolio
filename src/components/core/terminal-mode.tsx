@@ -81,12 +81,18 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
   const bottomRef = React.useRef<HTMLDivElement>(null);
   const inputRef = React.useRef<HTMLInputElement>(null);
 
+  const isFirstRender = React.useRef(true);
+
   React.useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [history]);
 
   React.useEffect(() => {
-    inputRef.current?.focus();
+    inputRef.current?.focus({ preventScroll: true });
   }, []);
 
   const processCommand = (cmd: string): React.ReactNode => {
@@ -278,7 +284,7 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
   };
 
   return (
-    <div className="flex flex-col h-[70vh]">
+    <div className="flex flex-col h-[calc(100vh-3rem)] md:h-[70vh]">
       <div className="flex-1 overflow-y-auto p-6 md:p-10 terminal-scroll">
         <div className="space-y-2 font-mono text-sm">
           {history.map((entry, i) => (
@@ -298,7 +304,7 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
 
       <form
         onSubmit={handleSubmit}
-        onClick={() => inputRef.current?.focus()}
+        onClick={() => inputRef.current?.focus({ preventScroll: true })}
         className="border-t border-border px-6 md:px-10 py-3 flex items-center gap-2 font-mono text-sm cursor-text"
       >
         <span className="text-muted-foreground select-none">$</span>

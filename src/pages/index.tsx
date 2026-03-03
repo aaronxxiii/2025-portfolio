@@ -8,16 +8,23 @@ const IndexPage: React.FC<PageProps> = () => {
   const [terminalMode, setTerminalMode] = React.useState(false);
 
   return (
-    <div className="min-h-screen bg-background p-4 md:p-8">
-      <div className="max-w-5xl mx-auto rounded-xl border border-border bg-card shadow-2xl overflow-hidden">
+    <div className="min-h-screen bg-background p-0 md:p-8">
+      <div className="max-w-5xl mx-auto border border-border bg-card shadow-2xl overflow-hidden rounded-none md:rounded-xl">
         {/* Terminal title bar */}
         <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-card">
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-red)' }} />
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-yellow)' }} />
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-green)' }} />
           <span className="ml-4 text-muted-foreground text-sm">
-            {terminalMode ? "terminal" : "bash"}
+            {terminalMode ? "~/ terminal" : "~/ aaron.dev"}
           </span>
+          <button
+            onClick={() => setTerminalMode((prev) => !prev)}
+            className="ml-auto px-2 py-0.5 text-xs font-mono rounded bg-background border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors cursor-pointer"
+            aria-label={terminalMode ? "Exit terminal mode" : "Enter terminal mode"}
+          >
+            {terminalMode ? "exit" : ">_"}
+          </button>
         </div>
         {/* Terminal content */}
         {terminalMode ? (
@@ -31,15 +38,6 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         )}
       </div>
-
-      {/* Floating terminal toggle */}
-      <button
-        onClick={() => setTerminalMode((prev) => !prev)}
-        className="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-card border border-border shadow-lg flex items-center justify-center cursor-pointer hover:border-primary transition-colors font-mono text-primary text-lg"
-        aria-label={terminalMode ? "Exit terminal mode" : "Enter terminal mode"}
-      >
-        {terminalMode ? "×" : ">_"}
-      </button>
     </div>
   );
 };

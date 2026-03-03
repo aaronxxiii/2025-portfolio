@@ -73,6 +73,16 @@ collections:
                       name: "stack name",
                       widget: "string",
                     }
+              - label: "Contributions"
+                name: "contributions"
+                widget: "list"
+                required: false
+                fields:
+                  - {
+                      label: "Contribution",
+                      name: "contribution",
+                      widget: "string",
+                    }
           - label: "Projects"
             name: "projects"
             widget: "list"

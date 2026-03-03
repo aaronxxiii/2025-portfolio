@@ -15,6 +15,9 @@ function experiences() {
             stacks {
               stack_name
             }
+            contributions {
+              contribution
+            }
             company {
               name
             }
@@ -38,6 +41,19 @@ function experiences() {
                 {item?.body}
               </ReactMarkdown>
             </div>
+            {item?.contributions?.length > 0 && (
+              <details className="mt-4 group">
+                <summary className="text-muted-foreground text-sm cursor-pointer list-none flex items-center gap-1 hover:text-foreground transition-colors">
+                  <span className="text-primary">$</span> ls ./contributions/
+                  <span className="text-muted-foreground text-xs ml-1 group-open:rotate-90 transition-transform">&#9654;</span>
+                </summary>
+                <ul className="list-disc list-inside text-sm flex flex-col gap-1.5 text-muted-foreground mt-2">
+                  {item.contributions.map((c: any, i: number) => (
+                    <li key={i}>{c?.contribution}</li>
+                  ))}
+                </ul>
+              </details>
+            )}
             <div className="flex gap-2 mt-4 flex-wrap">
               {item?.stacks?.map((stack: any, index: number) => (<Badge key={stack?.stack_name + index}>{stack?.stack_name}</Badge>))}
             </div>

@@ -26,6 +26,19 @@ experiences:
       implementation and optimization. I collaborate closely with
       cross-functional teams including backend engineers, designers, and product
       managers to deliver seamless and intuitive user experiences.
+    contributions:
+      - contribution: Contributed to 4 different projects, delivering scalable frontend solutions and collaborating with cross-functional teams to meet business requirements.
+      - contribution: Actively contributed to full-stack application development, building both frontend interfaces and backend services to deliver complete end-to-end solutions.
+      - contribution: Designed and integrated authentication systems, implementing secure flows with token refresh, session management, and role-based access control.
+      - contribution: Applied security best practices including input sanitization, HTTP-only cookies, and Content Security Policy (CSP) to prevent XSS and CSRF attacks.
+      - contribution: Implemented data-fetching strategies with caching, automatic refetching, and optimistic updates to reduce boilerplate by 40% and improve data synchronization.
+      - contribution: Implemented global state management across multiple projects, simplifying state handling and reducing re-render overhead for improved performance.
+      - contribution: Established frontend design patterns including component composition, custom hooks, and state management strategies to ensure scalable, maintainable, and consistent code across the team.
+      - contribution: Developed unit and end-to-end tests using Vitest and Playwright, ensuring code reliability and catching regressions early in the development cycle.
+      - contribution: Leveraged AI-assisted coding tools (GitHub Copilot, Claude) to accelerate development, streamline debugging, and improve code documentation, resulting in 40% faster iteration cycles and more maintainable codebases.
+      - contribution: Utilized Model Context Protocol (MCP) to integrate AI assistants with development tools and external services, enabling context-aware assistance and streamlined workflows.
+      - contribution: Integrated AI-powered design-to-code workflows to transform Figma mockups into production-ready components, reducing manual translation time by 60% while maintaining design fidelity.
+      - contribution: Configured custom agent skills in Claude to enhance AI capabilities for domain-specific tasks, improving code generation accuracy and output quality.
     stacks:
       - stack name: ReactJS
       - stack name: Nextjs
@@ -44,6 +57,10 @@ experiences:
       dynamic and fast-paced environment, I frequently interacted with
       designers, backend developers, QA engineers, and product stakeholders to
       ensure technical alignment, design fidelity, and user satisfaction.
+    contributions:
+      - contribution: Delivered 5+ CMS projects as a frontend developer, working with clients across various industries and ensuring timely project completion.
+      - contribution: Gained expertise in multiple web frameworks including ReactJS and .NET Blazor, adapting to different tech stacks based on project requirements.
+      - contribution: Integrated headless CMS platforms (NetlifyCMS, Umbraco) and implemented i18n, SEO optimization, and Google services integration.
     stacks:
       - stack name: ReactJS
       - stack name: GatsbyJS

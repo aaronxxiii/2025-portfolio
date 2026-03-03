@@ -11,11 +11,12 @@ videoBanner:
   altText: test
 about:
   name: Aaron Jay
-  title: Front End Engineer
-  body: I build fast, accessible, and visually precise experiences for the modern
-    web.
+  title: Full Stack Developer
+  body: I build and ship full stack web applications — from pixel-perfect
+    frontends to scalable backend services.
 experiences:
-  - date: Jul 2024 - Present
+  - hideStacks: true
+    date: Jul 2024 - Present
     company:
       name: BK Keyforce
     title: Front End Engineer
@@ -45,7 +46,8 @@ experiences:
       - stack name: TypeScript
       - stack name: Tailwind
       - stack name: Laravel
-  - date: Sep 2022 - Jul 2024
+  - hideStacks: true
+    date: Sep 2022 - Jul 2024
     company:
       name: Blackfort
     title: Front End Developer
@@ -67,7 +69,8 @@ experiences:
       - stack name: TypeScript
       - stack name: SCSS
       - stack name: .NET Blazor
-  - date: Jan 2022 - Apr 2022
+  - hideStacks: true
+    date: Jan 2022 - Apr 2022
     title: Associate Software Engineer
     body: Worked alongside student designers and engineers to develop and enhance
       school aide platforms. Integrated third-party APIs, including Paymongo for
@@ -85,19 +88,69 @@ experiences:
 title: test
 overview:
   body: >-
-    I’m a developer passionate about crafting accessible, pixel-perfect user
-    interfaces that blend thoughtful design with robust engineering.
+    Full Stack Developer with 4+ years of professional experience building end-to-end web applications across React, Next.js, Laravel, and .NET. I specialize in translating complex requirements into production-ready systems — delivering accessible frontends, secure backend services, and scalable architectures.
 
 
-    My favorite work lives at the intersection of design and development—creating experiences that not only look great but are meticulously built for performance and usability. 
+    At BK Keyforce, I’ve shipped 4 full stack projects, reduced frontend boilerplate by 40% through optimized data-fetching strategies, and cut design-to-code translation time by 60% using AI-assisted workflows. I’ve implemented authentication systems with token refresh and RBAC, established component design patterns adopted team-wide, and built end-to-end test suites with Vitest and Playwright.
 
 
-    Currently, I'm a Front-End Engineer at BK Keyforce, specializing in development. I help design, build, and maintain the UI components that power BK Keyforce's frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.
-
-
-    In the past, I’ve developed CMS projects for international clients and built software across agencies, companies, and businesses in industries ranging from digital media to tech.
+    Previously at Blackfort, I delivered 5+ web applications for international clients — adapting across React, Gatsby, and .NET stacks depending on project requirements. I leverage AI-assisted development to accelerate delivery without compromising code quality.
+skills:
+  - category: Frontend
+    items:
+      - skill_name: HTML
+      - skill_name: CSS
+      - skill_name: JavaScript
+      - skill_name: ReactJS
+      - skill_name: Angular
+      - skill_name: VueJS
+      - skill_name: NextJS
+      - skill_name: TypeScript
+      - skill_name: TailwindCSS
+  - category: Backend
+    items:
+      - skill_name: NodeJS
+      - skill_name: Laravel
+      - skill_name: ASP.NET Core
+      - skill_name: REST API
+      - skill_name: GraphQL
+  - category: Testing
+    items:
+      - skill_name: React Testing Library
+      - skill_name: Vitest
+      - skill_name: Cypress
+      - skill_name: Jest
+      - skill_name: Playwright
+      - skill_name: Storybook
+  - category: Database
+    items:
+      - skill_name: MySQL
+      - skill_name: PostgreSQL
+      - skill_name: Supabase
+      - skill_name: Drizzle ORM
+  - category: AI Tools
+    items:
+      - skill_name: GitHub Copilot
+      - skill_name: Claude
+      - skill_name: Claude Code
+      - skill_name: Claude API
+      - skill_name: ChatGPT
+      - skill_name: MCP Integration
+      - skill_name: Prompt Engineering
+  - category: Other
+    items:
+      - skill_name: Git
+      - skill_name: GitHub
+      - skill_name: GitLab
+      - skill_name: Figma
+      - skill_name: UI/UX
+      - skill_name: Vercel
+      - skill_name: CMS Integration
+      - skill_name: Azure Boards
+      - skill_name: Jira
 projects:
   - hidden: false
+    hideStacks: false
     body: >-
       **Daimasu** is a high-end Japanese dining establishment in the
       Philippines. I created their website entirely through AI-assisted
@@ -121,6 +174,7 @@ projects:
       - stack name: Laravel
       - stack name: Claude Code
   - hidden: false
+    hideStacks: false
     image: ../../assets/vortexwear.png
     title: Vortexwear PH
     link: https://vortexwearph.com/?_cd=d3b73627c8643abc5d5582b36ac8a870ded1db3e26cf5ac9431566366e248d26&_uid=121714311461&preview_theme_id=182196273445&preview_token=gr4eeo84ijpd7kqivh3xribajn4ags5b
@@ -139,6 +193,7 @@ projects:
       schema for merchant-configurable components while maintaining
       compatibility with Shopify's Online Store 2.0 framework.
   - hidden: false
+    hideStacks: false
     image: ../../assets/betrnk_thumbnail.jpg
     title: Betrnk Cage
     body: >-
@@ -158,6 +213,7 @@ projects:
       - stack name: ShadCN
       - stack name: Laravel
   - hidden: false
+    hideStacks: false
     image: ../../assets/landscape-placeholder-e1608289113759.png
     title: Transport Ops
     body: "**Transport Ops** is a comprehensive logistics and operations management
@@ -175,6 +231,7 @@ projects:
       - stack name: KendoUI
       - stack name: MySQL
   - hidden: false
+    hideStacks: false
     image: ../../assets/spanasia_thumbnail.jpg
     title: Span Asia
     link: https://www.spanasiacarrier.com/
@@ -196,6 +253,7 @@ projects:
       - stack name: Umbraco CMS
       - stack name: GraphQL
   - hidden: false
+    hideStacks: false
     image: ../../assets/jfe_thumbnail.jpg
     title: JFE Engineering
     link: https://jfem.com.my/

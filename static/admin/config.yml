@@ -46,6 +46,13 @@ collections:
             name: "experiences"
             widget: "list"
             fields:
+              - {
+                  label: "Hide Stacks",
+                  name: "hideStacks",
+                  widget: "boolean",
+                  default: false,
+                  hint: "Toggle to hide the tech stack badges for this experience",
+                }
               - { label: "Date", name: "date", widget: "string" }
               - {
                   label: "Company",
@@ -83,6 +90,20 @@ collections:
                       name: "contribution",
                       widget: "string",
                     }
+          - label: "Skills"
+            name: "skills"
+            widget: "list"
+            fields:
+              - { label: "Category", name: "category", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {
+                      label: "Skill Name",
+                      name: "skill_name",
+                      widget: "string",
+                    }
           - label: "Projects"
             name: "projects"
             widget: "list"
@@ -93,6 +114,13 @@ collections:
                   widget: "boolean",
                   default: false,
                   hint: "Toggle to hide this project from the website",
+                }
+              - {
+                  label: "Hide Stacks",
+                  name: "hideStacks",
+                  widget: "boolean",
+                  default: false,
+                  hint: "Toggle to hide the tech stack badges for this project",
                 }
               - {
                   label: "Image",

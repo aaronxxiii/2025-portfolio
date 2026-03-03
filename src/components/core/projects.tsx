@@ -13,6 +13,7 @@ function projects() {
         frontmatter {
           projects {
             hidden
+            hideStacks
             image {
                 childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, formats: WEBP)
@@ -54,9 +55,11 @@ function projects() {
                 {item?.body}
               </ReactMarkdown>
             </div>
-            <div className="flex gap-2 mt-4 flex-wrap">
-              {item?.stacks?.map((stack: any, index: number) => (<Badge key={stack?.stack_name + index}>{stack?.stack_name}</Badge>))}
-            </div>
+            {!item?.hideStacks && (
+              <div className="flex gap-2 mt-4 flex-wrap">
+                {item?.stacks?.map((stack: any, index: number) => (<Badge key={stack?.stack_name + index}>{stack?.stack_name}</Badge>))}
+              </div>
+            )}
           </div>
           <span className="absolute -inset-6 p-6 group-hover:bg-accent transition-all duration-300 -z-1 rounded-sm">
           </span>

@@ -1,6 +1,7 @@
 import Experiences from "@/components/core/experiences";
 import Footer from "@/components/core/footer";
 import Projects from "@/components/core/projects";
+import Skills from "@/components/core/skills";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import ReactMarkdown from "react-markdown";
@@ -39,6 +40,13 @@ function MainContent() {
             {body}
           </ReactMarkdown>
         </div>
+      </section>
+
+      <section id="skills" className="pt-16 border-t border-border mt-16">
+        <p className="text-muted-foreground text-sm mb-4">
+          <span className="text-primary">$</span> cat skills.md
+        </p>
+        <Skills />
       </section>
 
       <section id="experiences" className="pt-16 border-t border-border mt-16">

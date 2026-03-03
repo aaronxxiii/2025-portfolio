@@ -9,6 +9,7 @@ function experiences() {
       markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
         frontmatter {
           experiences {
+            hideStacks
             date
             body
             title
@@ -54,9 +55,11 @@ function experiences() {
                 </ul>
               </details>
             )}
-            <div className="flex gap-2 mt-4 flex-wrap">
-              {item?.stacks?.map((stack: any, index: number) => (<Badge key={stack?.stack_name + index}>{stack?.stack_name}</Badge>))}
-            </div>
+            {!item?.hideStacks && (
+              <div className="flex gap-2 mt-4 flex-wrap">
+                {item?.stacks?.map((stack: any, index: number) => (<Badge key={stack?.stack_name + index}>{stack?.stack_name}</Badge>))}
+              </div>
+            )}
           </div>
         </div>
       )}

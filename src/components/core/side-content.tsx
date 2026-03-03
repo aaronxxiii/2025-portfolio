@@ -43,6 +43,10 @@ function SideContent() {
       value: "#about",
     },
     {
+      label: "SKILLS",
+      value: "#skills",
+    },
+    {
       label: "EXPERIENCES",
       value: "#experiences",
     },

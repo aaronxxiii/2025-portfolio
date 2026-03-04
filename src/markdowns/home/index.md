@@ -297,6 +297,13 @@ socials:
     link: https://www.linkedin.com/in/aaronmlbnn/
 testimonials:
   - featured: true
+    name: Lei Marie Luces
+    role: UI/UX Designer
+    company: 
+    date: 2026-03-04
+    photo: 
+    body: "It was a great opportunity for me to work with Aaron. He’s one of the front-end developers I frequently collaborate with. He works quickly and delivers high-quality output. He also enjoys sharing the latest trends and updates in development technology, which makes working with him even more inspiring."
+  - featured: true
     name: Roel Reyes
     role: QA Engineer
     company: 

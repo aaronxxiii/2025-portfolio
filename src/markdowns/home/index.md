@@ -297,6 +297,13 @@ socials:
     link: https://www.linkedin.com/in/aaronmlbnn/
 testimonials:
   - featured: true
+    name: Roel Reyes
+    role: QA Engineer
+    company: 
+    date: 2026-03-04
+    photo: 
+    body: "Working with Aaron is a very smooth experience. As the front-end developer I've worked with since joining the company, he consistently delivers high-quality features. I encounter very few bugs in his work, which allows me to test and validate his developments quickly and efficiently."
+  - featured: true
     name: Sheena Santos
     role: Backend Engineer
     company: BK Keyforce

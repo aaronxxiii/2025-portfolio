@@ -20,7 +20,8 @@ function escapeYaml(value) {
 /** Build a YAML list entry for a testimonial. */
 function buildTestimonialYaml({ name, role, company, testimonial, photo, date }) {
   return [
-    `  - name: ${escapeYaml(name)}`,
+    `  - featured: true`,
+    `    name: ${escapeYaml(name)}`,
     `    role: ${escapeYaml(role)}`,
     `    company: ${escapeYaml(company)}`,
     `    date: ${date}`,

@@ -51,6 +51,15 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
             hidden
             featured
           }
+          testimonials {
+            featured
+            name
+            role
+            company
+            date
+            body
+            approved
+          }
           socials {
             title
             link
@@ -109,6 +118,7 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
               ["/skills", "Technical skills by category"],
               ["/experiences", "Work history"],
               ["/projects", "Things I've built"],
+              ["/testimonials", "What people say"],
               ["/socials", "Where to find me"],
               ["/clear", "Clear terminal"],
               ["/exit", "Return to portfolio"],
@@ -223,6 +233,43 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
               )}
           </div>
         );
+
+      case "/testimonials": {
+        const approved = fm.testimonials?.filter(
+          (t: { approved: boolean; featured?: boolean }) =>
+            t.approved && t.featured
+        );
+        if (!approved?.length) {
+          return (
+            <p className="text-muted-foreground">No testimonials yet.</p>
+          );
+        }
+        return (
+          <div className="space-y-4">
+            {approved.map(
+              (
+                t: {
+                  name: string;
+                  role: string;
+                  company: string;
+                  date: string;
+                  body: string;
+                },
+                i: number
+              ) => (
+                <div key={i} className="border-l-2 border-primary/30 pl-3">
+                  <p className="text-primary font-bold">{t.name}</p>
+                  <p className="text-secondary">
+                    {t.role}{t.company ? ` — ${t.company}` : ""}
+                  </p>
+                  <p className="text-muted-foreground text-sm">{t.date}</p>
+                  <p className="text-foreground mt-1">{t.body}</p>
+                </div>
+              )
+            )}
+          </div>
+        );
+      }
 
       case "/socials":
         return (

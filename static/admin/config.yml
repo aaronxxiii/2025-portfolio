@@ -166,6 +166,7 @@ collections:
             name: "testimonials"
             widget: "list"
             fields:
+              - { label: "Featured", name: "featured", widget: "boolean", default: true, hint: "Toggle to feature this testimonial" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Role", name: "role", widget: "string" }
               - { label: "Company", name: "company", widget: "string" }

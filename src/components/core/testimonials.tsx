@@ -7,6 +7,7 @@ function Testimonials() {
       markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
         frontmatter {
           testimonials {
+            featured
             name
             role
             company
@@ -21,7 +22,7 @@ function Testimonials() {
   `);
 
   const testimonials = data?.markdownRemark?.frontmatter?.testimonials?.filter(
-    (t: any) => t?.approved
+    (t: any) => t?.approved && t?.featured
   );
 
   if (!testimonials?.length) return null;

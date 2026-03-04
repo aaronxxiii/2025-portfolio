@@ -297,6 +297,13 @@ socials:
     link: https://www.linkedin.com/in/aaronmlbnn/
 testimonials:
   - featured: true
+    name: Gared Amoranto
+    role: QA Engineer
+    company: 
+    date: 2026-03-04
+    photo: 
+    body: "Working with Aaron for the past four months has made my life so much easier. They handle everything from the behind-the-scenes logic to the parts our customers actually see. They are proactive, easy to talk to, and they consistently deliver great work on time. I can’t recommend them enough."
+  - featured: true
     name: Lei Marie Luces
     role: UI/UX Designer
     company: 

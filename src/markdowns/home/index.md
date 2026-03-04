@@ -264,6 +264,13 @@ projects:
       - stack name: Netlify CMS
       - stack name: GraphQL
 testimonials:
+  - featured: false
+    name: Jade Soriano
+    role: Senior Backend Engineer
+    company: BK Keyforce
+    date: 2026-03-04
+    photo: 
+    body: "Working with Aaron has been a great experience. He's the kind of developer you can throw any problem at and trust he'll figure it out. Really solid with both frontend and backend, and he genuinely cares about writing good code, not just code that works, but code that's easy to maintain. He's also just a good person to work with, always willing to help out and share what he knows. Highly recommend him."
   - featured: true
     name: Jeffrey Alteza
     role: Senior Backend Software Engineer

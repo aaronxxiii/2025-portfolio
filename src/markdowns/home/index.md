@@ -266,6 +266,14 @@ projects:
       - stack name: Netlify CMS
       - stack name: GraphQL
 testimonials:
+  - featured: false
+    name: Placeholder
+    role: ""
+    company: ""
+    date: "2000-01-01"
+    photo: ""
+    approved: false
+    body: ""
 footer:
   body: Built with **GatsbyJS**, **NetlifyCMS** and **Tailwind CSS**, deployed
     with Netlify.

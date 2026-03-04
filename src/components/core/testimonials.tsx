@@ -13,6 +13,7 @@ function Testimonials() {
             company
             date
             photo
+            portfolio_link
             body
           }
         }
@@ -43,9 +44,20 @@ function Testimonials() {
                 />
               )}
               <div>
-                <span className="font-semibold text-lg text-primary">
-                  {item?.name}
-                </span>
+                {item?.portfolio_link ? (
+                  <a
+                    href={item.portfolio_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-lg text-primary hover:underline"
+                  >
+                    {item?.name}
+                  </a>
+                ) : (
+                  <span className="font-semibold text-lg text-primary">
+                    {item?.name}
+                  </span>
+                )}
                 <p className="text-sm text-muted-foreground">
                   {item?.role}{item?.company ? ` — ${item.company}` : ""}
                 </p>

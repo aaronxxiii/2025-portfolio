@@ -1,9 +1,12 @@
 /**
- * Netlify Function (v2) — receives testimonial form data as JSON, validates it,
- * and commits a markdown file to the repo via the GitHub Contents API.
+ * Netlify Function (v2) — receives testimonial form data as JSON,
+ * appends it to the testimonials list in home/index.md, and commits
+ * the updated file via the GitHub Contents API.
  */
 
 const { GITHUB_TOKEN, GITHUB_REPO_OWNER, GITHUB_REPO_NAME } = process.env;
+
+const FILE_PATH = "src/markdowns/home/index.md";
 
 /** Escape a value for safe inclusion in YAML frontmatter. */
 function escapeYaml(value) {
@@ -14,13 +17,17 @@ function escapeYaml(value) {
   return value;
 }
 
-/** Turn a name into a URL-friendly slug. */
-function slugify(text) {
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+/** Build a YAML list entry for a testimonial. */
+function buildTestimonialYaml({ name, role, company, testimonial, photo, date }) {
+  return [
+    `  - name: ${escapeYaml(name)}`,
+    `    role: ${escapeYaml(role)}`,
+    `    company: ${escapeYaml(company)}`,
+    `    date: ${date}`,
+    `    photo: ${escapeYaml(photo || "")}`,
+    `    approved: false`,
+    `    body: ${escapeYaml(testimonial)}`,
+  ].join("\n");
 }
 
 export default async function handler(request) {
@@ -46,51 +53,68 @@ export default async function handler(request) {
     return new Response("Missing required fields.", { status: 400 });
   }
 
-  const now = new Date();
-  const dateStr = now.toISOString().slice(0, 10);
-  const uniqueSuffix = now.getTime().toString(36);
-  const slug = slugify(name);
-  const fileName = `${dateStr}-${slug}-${uniqueSuffix}.md`;
-  const filePath = `src/markdowns/testimonials/${fileName}`;
+  const apiBase = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}`;
+  const headers = {
+    Authorization: `Bearer ${GITHUB_TOKEN}`,
+    Accept: "application/vnd.github+json",
+    "Content-Type": "application/json",
+  };
 
-  const photoUrl = photo || "";
+  // 1. Fetch current file content and SHA
+  const getRes = await fetch(`${apiBase}/contents/${FILE_PATH}?ref=main`, { headers });
+  if (!getRes.ok) {
+    console.error("Failed to fetch index.md:", await getRes.text());
+    return new Response("Failed to read file.", { status: 502 });
+  }
 
-  const content = `---
-templateKey: testimonial
-name: ${escapeYaml(name)}
-role: ${escapeYaml(role)}
-company: ${escapeYaml(company)}
-date: ${dateStr}
-photo: ${escapeYaml(photoUrl)}
-approved: false
----
+  const fileData = await getRes.json();
+  const currentContent = Buffer.from(fileData.content, "base64").toString("utf-8");
+  const { sha } = fileData;
 
-${testimonial}
-`;
+  // 2. Insert new testimonial entry after the `testimonials:` line
+  const dateStr = new Date().toISOString().slice(0, 10);
+  const entry = buildTestimonialYaml({ name, role, company, testimonial, photo, date: dateStr });
 
-  const contentBase64 = Buffer.from(content).toString("base64");
-  const apiUrl = `https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/contents/${filePath}`;
+  let updatedContent;
+  const testimonialsIdx = currentContent.indexOf("\ntestimonials:\n");
 
-  const response = await fetch(apiUrl, {
+  if (testimonialsIdx !== -1) {
+    // Insert right after "testimonials:\n"
+    const insertPos = testimonialsIdx + "\ntestimonials:\n".length;
+    updatedContent =
+      currentContent.slice(0, insertPos) +
+      entry + "\n" +
+      currentContent.slice(insertPos);
+  } else {
+    // No testimonials key yet — insert before "footer:"
+    const footerIdx = currentContent.indexOf("\nfooter:");
+    if (footerIdx === -1) {
+      return new Response("Could not find insertion point in index.md.", { status: 500 });
+    }
+    updatedContent =
+      currentContent.slice(0, footerIdx) +
+      "\ntestimonials:\n" + entry + "\n" +
+      currentContent.slice(footerIdx);
+  }
+
+  // 3. Commit the updated file
+  const putRes = await fetch(`${apiBase}/contents/${FILE_PATH}`, {
     method: "PUT",
-    headers: {
-      Authorization: `Bearer ${GITHUB_TOKEN}`,
-      Accept: "application/vnd.github+json",
-      "Content-Type": "application/json",
-    },
+    headers,
     body: JSON.stringify({
       message: `feat(testimonial): add testimonial from ${name}`,
-      content: contentBase64,
+      content: Buffer.from(updatedContent).toString("base64"),
+      sha,
       branch: "main",
     }),
   });
 
-  if (!response.ok) {
-    const errorBody = await response.text();
-    console.error(`GitHub API error (${response.status}):`, errorBody);
+  if (!putRes.ok) {
+    const errorBody = await putRes.text();
+    console.error(`GitHub API error (${putRes.status}):`, errorBody);
     return new Response("Failed to save testimonial.", { status: 502 });
   }
 
-  console.log(`Committed ${filePath} successfully.`);
+  console.log(`Testimonial from ${name} committed successfully.`);
   return new Response("Testimonial saved.", { status: 200 });
 }

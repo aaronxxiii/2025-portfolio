@@ -3,6 +3,7 @@ import Footer from "@/components/core/footer";
 import GithubCalendar from "@/components/core/github-calendar";
 import Projects from "@/components/core/projects";
 import Skills from "@/components/core/skills";
+import Testimonials from "@/components/core/testimonials";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import ReactMarkdown from "react-markdown";
@@ -69,6 +70,13 @@ function MainContent() {
           <span className="text-primary">$</span> ls ./projects/
         </p>
         <Projects />
+      </section>
+
+      <section id="testimonials" className="pt-16 border-t border-border mt-16">
+        <p className="text-muted-foreground text-sm mb-4">
+          <span className="text-primary">$</span> cat ./testimonials/
+        </p>
+        <Testimonials />
       </section>
 
       <section className="pt-16 border-t border-border mt-16">

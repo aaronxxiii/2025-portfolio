@@ -265,6 +265,7 @@ projects:
       - stack name: SCSS
       - stack name: Netlify CMS
       - stack name: GraphQL
+testimonials:
 footer:
   body: Built with **GatsbyJS**, **NetlifyCMS** and **Tailwind CSS**, deployed
     with Netlify.

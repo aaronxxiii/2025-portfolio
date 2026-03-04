@@ -84,6 +84,7 @@ export default async function handler(request) {
     const track = data.item;
     const payload = {
       isPlaying: true,
+      trackId: track.id,
       title: track.name,
       artist: track.artists.map((a) => a.name).join(", "),
       album: track.album.name,

@@ -299,24 +299,35 @@ testimonials:
   - featured: true
     name: Gared Amoranto
     role: QA Engineer
-    company: 
+    company: BK Keyforce
     date: 2026-03-04
-    photo: 
-    body: "Working with Aaron for the past four months has made my life so much easier. They handle everything from the behind-the-scenes logic to the parts our customers actually see. They are proactive, easy to talk to, and they consistently deliver great work on time. I can’t recommend them enough."
+    photo: null
+    body: Working with Aaron for the past four months has made my life so much
+      easier. They handle everything from the behind-the-scenes logic to the
+      parts our customers actually see. They are proactive, easy to talk to, and
+      they consistently deliver great work on time. I can’t recommend them
+      enough.
   - featured: true
     name: Lei Marie Luces
     role: UI/UX Designer
-    company: 
+    company: BK Keyforce
     date: 2026-03-04
-    photo: 
-    body: "It was a great opportunity for me to work with Aaron. He’s one of the front-end developers I frequently collaborate with. He works quickly and delivers high-quality output. He also enjoys sharing the latest trends and updates in development technology, which makes working with him even more inspiring."
+    photo: null
+    body: It was a great opportunity for me to work with Aaron. He’s one of the
+      front-end developers I frequently collaborate with. He works quickly and
+      delivers high-quality output. He also enjoys sharing the latest trends and
+      updates in development technology, which makes working with him even more
+      inspiring.
   - featured: true
     name: Roel Reyes
     role: QA Engineer
-    company: 
+    company: BK Keyforce
     date: 2026-03-04
-    photo: 
-    body: "Working with Aaron is a very smooth experience. As the front-end developer I've worked with since joining the company, he consistently delivers high-quality features. I encounter very few bugs in his work, which allows me to test and validate his developments quickly and efficiently."
+    photo: null
+    body: Working with Aaron is a very smooth experience. As the front-end developer
+      I've worked with since joining the company, he consistently delivers
+      high-quality features. I encounter very few bugs in his work, which allows
+      me to test and validate his developments quickly and efficiently.
   - featured: true
     name: Sheena Santos
     role: Backend Engineer
@@ -338,6 +349,7 @@ testimonials:
       code, not just code that works, but code that's easy to maintain. He's
       also just a good person to work with, always willing to help out and share
       what he knows. Highly recommend him.
+    portfolio_link: https://jadessoriano.github.io/me/
   - featured: false
     name: Jade Soriano
     role: Senior Backend Engineer

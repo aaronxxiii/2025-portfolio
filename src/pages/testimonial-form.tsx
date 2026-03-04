@@ -110,13 +110,12 @@ const TestimonialFormPage: React.FC<PageProps> = () => {
 
                   <div>
                     <label htmlFor="company" className="block text-sm text-muted-foreground mb-1">
-                      Company <span className="text-destructive">*</span>
+                      Company <span className="text-muted-foreground/50">(optional)</span>
                     </label>
                     <input
                       type="text"
                       id="company"
                       name="company"
-                      required
                       autoComplete="one-time-code"
                       className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
                       placeholder="Acme Inc."

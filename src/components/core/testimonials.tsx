@@ -34,10 +34,7 @@ function Testimonials() {
           className="grid grid-cols-8 justify-start relative"
           key={item?.name + index}
         >
-          <p className="text-sm whitespace-nowrap mt-1 col-span-8 md:col-span-2 font-semibold text-muted-foreground">
-            {item?.date}
-          </p>
-          <div className="col-span-8 md:col-span-6 ml-0 md:ml-10">
+          <div className="col-span-8">
             <div className="flex items-center gap-3">
               {item?.photo && (
                 <img
@@ -55,9 +52,15 @@ function Testimonials() {
                 </p>
               </div>
             </div>
-            <p className="mt-4 text-sm text-justify text-foreground">
-              {item?.body}
-            </p>
+            <details className="mt-4 group">
+              <summary className="text-muted-foreground text-sm cursor-pointer list-none flex items-center gap-1 hover:text-foreground transition-colors">
+                <span className="text-primary">$</span> cat testimonial.txt
+                <span className="text-muted-foreground text-xs ml-1 group-open:rotate-90 transition-transform">&#9654;</span>
+              </summary>
+              <p className="mt-2 text-sm text-justify text-foreground">
+                {item?.body}
+              </p>
+            </details>
           </div>
         </div>
       ))}

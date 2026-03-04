@@ -50,7 +50,7 @@ export default async function handler(request) {
 
   const { name, role, company, testimonial, photo } = data;
 
-  if (!name || !role || !company || !testimonial) {
+  if (!name || !role || !testimonial) {
     return new Response("Missing required fields.", { status: 400 });
   }
 

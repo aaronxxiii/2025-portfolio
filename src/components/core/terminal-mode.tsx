@@ -262,8 +262,13 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
                   <p className="text-secondary">
                     {t.role}{t.company ? ` — ${t.company}` : ""}
                   </p>
-                  <p className="text-muted-foreground text-sm">{t.date}</p>
-                  <p className="text-foreground mt-1">{t.body}</p>
+                  <details className="mt-1 group">
+                    <summary className="text-muted-foreground text-sm cursor-pointer list-none flex items-center gap-1 hover:text-foreground transition-colors">
+                      <span className="text-primary">$</span> cat testimonial.txt
+                      <span className="text-muted-foreground text-xs ml-1 group-open:rotate-90 transition-transform">&#9654;</span>
+                    </summary>
+                    <p className="text-foreground mt-1 ml-2">{t.body}</p>
+                  </details>
                 </div>
               )
             )}

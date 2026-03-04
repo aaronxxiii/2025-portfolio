@@ -302,6 +302,7 @@ testimonials:
     company: BK Keyforce
     date: 2026-03-04
     photo: null
+    portfolio_link: ""
     body: He is a highly skilled Frontend Developer who consistently delivers clean,
       responsive, and user-friendly interfaces.
   - featured: true

@@ -14,10 +14,19 @@ const TestimonialFormPage: React.FC<PageProps> = () => {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    const payload = {
+      name: formData.get("name"),
+      role: formData.get("role"),
+      company: formData.get("company"),
+      testimonial: formData.get("testimonial"),
+      photo: formData.get("photo"),
+    };
+
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/.netlify/functions/submit-testimonial", {
         method: "POST",
-        body: formData,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
@@ -65,21 +74,9 @@ const TestimonialFormPage: React.FC<PageProps> = () => {
               </p>
 
               <form
-                name="testimonials"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                encType="multipart/form-data"
                 onSubmit={handleSubmit}
                 className="space-y-5"
               >
-                <input type="hidden" name="form-name" value="testimonials" />
-                <p className="hidden">
-                  <label>
-                    Don't fill this out: <input name="bot-field" />
-                  </label>
-                </p>
-
                 <div>
                   <label htmlFor="name" className="block text-sm text-muted-foreground mb-1">
                     Name <span className="text-destructive">*</span>
@@ -138,14 +135,14 @@ const TestimonialFormPage: React.FC<PageProps> = () => {
 
                 <div>
                   <label htmlFor="photo" className="block text-sm text-muted-foreground mb-1">
-                    Profile Photo <span className="text-muted-foreground/50">(optional)</span>
+                    Profile Photo URL <span className="text-muted-foreground/50">(optional)</span>
                   </label>
                   <input
-                    type="file"
+                    type="url"
                     id="photo"
                     name="photo"
-                    accept="image/*"
-                    className="w-full text-sm text-muted-foreground file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border file:border-border file:bg-background file:text-sm file:text-muted-foreground file:cursor-pointer hover:file:text-primary hover:file:border-primary file:transition-colors"
+                    className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                    placeholder="https://example.com/photo.jpg"
                   />
                 </div>
 

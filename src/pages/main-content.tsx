@@ -45,8 +45,6 @@ function MainContent() {
         </div>
       </section>
 
-      <SpotifyNowPlaying />
-
       <section id="skills" className="pt-16 border-t border-border mt-16">
         <p className="text-muted-foreground text-sm mb-4">
           <span className="text-primary">$</span> cat skills.md
@@ -81,6 +79,8 @@ function MainContent() {
         </p>
         <Testimonials />
       </section>
+
+      <SpotifyNowPlaying />
 
       <section className="pt-16 border-t border-border mt-16">
         <footer className="pb-16 text-center flex justify-center">

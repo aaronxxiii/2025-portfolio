@@ -42,6 +42,7 @@ function SideContent() {
     { label: "GITHUB", value: "#github" },
     { label: "EXPERIENCES", value: "#experiences" },
     { label: "PROJECTS", value: "#projects" },
+    { label: "TESTIMONIALS", value: "#testimonials" },
   ];
 
   return (

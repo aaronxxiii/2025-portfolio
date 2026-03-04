@@ -488,13 +488,15 @@ main {
   font-family: "Source Code Pro", monospace;
   scroll-behavior: smooth;
   margin: 0;
-  box-sizing: content-box;
   letter-spacing: 0em;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @keyframes blink {

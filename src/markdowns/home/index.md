@@ -281,8 +281,8 @@ I highly recommend him to anyone looking for a talented and dedicated frontend d
     role: Senior Backend Software Engineer
     company: Tech Company
     date: 2026-03-04
-    photo: 
-    approved: false
+    photo:
+    approved: true
     body: "I’ve had the pleasure of working with a highly skilled Frontend Engineer who specializes in React.js and Next.js. He consistently delivers fast, scalable, and user-friendly web applications with clean, maintainable code.
 
 His attention to detail and strong understanding of modern frontend best practices ensure every project is both visually polished and performance-driven. Beyond his technical expertise, he’s reliable, proactive, and great to collaborate with.
@@ -293,8 +293,8 @@ I highly recommend him to anyone looking for a talented and dedicated frontend d
     role: Mobile Application Developer
     company: BK Keyforce
     date: 2026-03-04
-    photo: 
-    approved: false
+    photo:
+    approved: true
     body: "I've had the opportunity of working with Aaron for the past year, and he's been a standout front-end developer on our team. What sets him apart is his genuine passion for his craft — he doesn't just get the job done, he cares deeply about the quality of his work. He's a fast learner and always eager to learn from others, which shows his humility and drive to grow. Beyond his technical skills, Aaron is always willing to share his knowledge and lend a hand to his teammates, making everyone around him better. Any team would be lucky to have him. 
 "
   - featured: false

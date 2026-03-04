@@ -1,5 +1,5 @@
 /**
- * Netlify Function — receives testimonial form data as JSON, validates it,
+ * Netlify Function (v2) — receives testimonial form data as JSON, validates it,
  * and commits a markdown file to the repo via the GitHub Contents API.
  */
 
@@ -23,27 +23,27 @@ function slugify(text) {
     .replace(/^-+|-+$/g, "");
 }
 
-export default async function handler(event) {
-  if (event.httpMethod !== "POST") {
-    return { statusCode: 405, body: "Method not allowed." };
+export default async function handler(request) {
+  if (request.method !== "POST") {
+    return new Response("Method not allowed.", { status: 405 });
   }
 
   if (!GITHUB_TOKEN || !GITHUB_REPO_OWNER || !GITHUB_REPO_NAME) {
     console.error("Missing required GITHUB_* environment variables.");
-    return { statusCode: 500, body: "Server misconfiguration." };
+    return new Response("Server misconfiguration.", { status: 500 });
   }
 
   let data;
   try {
-    data = JSON.parse(event.body);
+    data = await request.json();
   } catch {
-    return { statusCode: 400, body: "Invalid JSON." };
+    return new Response("Invalid JSON.", { status: 400 });
   }
 
   const { name, role, company, testimonial, photo } = data;
 
   if (!name || !role || !company || !testimonial) {
-    return { statusCode: 400, body: "Missing required fields." };
+    return new Response("Missing required fields.", { status: 400 });
   }
 
   const now = new Date();
@@ -88,9 +88,9 @@ ${testimonial}
   if (!response.ok) {
     const errorBody = await response.text();
     console.error(`GitHub API error (${response.status}):`, errorBody);
-    return { statusCode: 502, body: "Failed to save testimonial." };
+    return new Response("Failed to save testimonial.", { status: 502 });
   }
 
   console.log(`Committed ${filePath} successfully.`);
-  return { statusCode: 200, body: "Testimonial saved." };
+  return new Response("Testimonial saved.", { status: 200 });
 }

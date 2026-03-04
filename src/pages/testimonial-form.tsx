@@ -43,7 +43,7 @@ const TestimonialFormPage: React.FC<PageProps> = () => {
 
   return (
     <div className="min-h-screen bg-background p-0 md:p-8">
-      <div className="max-w-5xl mx-auto border border-border bg-card shadow-2xl overflow-hidden rounded-none md:rounded-xl">
+      <div className="w-full mx-auto border border-border bg-card shadow-2xl overflow-hidden rounded-none md:rounded-xl">
         {/* Terminal title bar */}
         <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-card">
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-red)' }} />
@@ -76,93 +76,94 @@ const TestimonialFormPage: React.FC<PageProps> = () => {
               <form
                 onSubmit={handleSubmit}
                 autoComplete="one-time-code"
-                className="space-y-5"
               >
-                <fieldset className="space-y-2">
-                  <label htmlFor="name" className="block text-sm text-muted-foreground">
-                    Name <span className="text-destructive">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    autoComplete="one-time-code"
-                    className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
-                    placeholder="Jane Doe"
-                  />
-                </fieldset>
+                <div className="flex flex-col gap-5">
+                  <div>
+                    <label htmlFor="name" className="block text-sm text-muted-foreground mb-1">
+                      Name <span className="text-destructive">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      autoComplete="one-time-code"
+                      className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                      placeholder="Jane Doe"
+                    />
+                  </div>
 
-                <fieldset className="space-y-2">
-                  <label htmlFor="role" className="block text-sm text-muted-foreground">
-                    Role / Title <span className="text-destructive">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="role"
-                    name="role"
-                    required
-                    autoComplete="one-time-code"
-                    className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
-                    placeholder="Senior Developer"
-                  />
-                </fieldset>
+                  <div>
+                    <label htmlFor="role" className="block text-sm text-muted-foreground mb-1">
+                      Role / Title <span className="text-destructive">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="role"
+                      name="role"
+                      required
+                      autoComplete="one-time-code"
+                      className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                      placeholder="Senior Developer"
+                    />
+                  </div>
 
-                <fieldset className="space-y-2">
-                  <label htmlFor="company" className="block text-sm text-muted-foreground">
-                    Company <span className="text-destructive">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    required
-                    autoComplete="one-time-code"
-                    className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
-                    placeholder="Acme Inc."
-                  />
-                </fieldset>
+                  <div>
+                    <label htmlFor="company" className="block text-sm text-muted-foreground mb-1">
+                      Company <span className="text-destructive">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      required
+                      autoComplete="one-time-code"
+                      className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                      placeholder="Acme Inc."
+                    />
+                  </div>
 
-                <fieldset className="space-y-2">
-                  <label htmlFor="testimonial" className="block text-sm text-muted-foreground">
-                    Testimonial <span className="text-destructive">*</span>
-                  </label>
-                  <textarea
-                    id="testimonial"
-                    name="testimonial"
-                    required
-                    rows={5}
-                    autoComplete="one-time-code"
-                    className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-vertical"
-                    placeholder="Working with Aaron was..."
-                  />
-                </fieldset>
+                  <div>
+                    <label htmlFor="testimonial" className="block text-sm text-muted-foreground mb-1">
+                      Testimonial <span className="text-destructive">*</span>
+                    </label>
+                    <textarea
+                      id="testimonial"
+                      name="testimonial"
+                      required
+                      rows={5}
+                      autoComplete="one-time-code"
+                      className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-vertical"
+                      placeholder="Working with Aaron was..."
+                    />
+                  </div>
 
-                <fieldset className="space-y-2">
-                  <label htmlFor="photo" className="block text-sm text-muted-foreground">
-                    Profile Photo URL <span className="text-muted-foreground/50">(optional)</span>
-                  </label>
-                  <input
-                    type="url"
-                    id="photo"
-                    name="photo"
-                    autoComplete="one-time-code"
-                    className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
-                    placeholder="https://example.com/photo.jpg"
-                  />
-                </fieldset>
+                  <div>
+                    <label htmlFor="photo" className="block text-sm text-muted-foreground mb-1">
+                      Profile Photo URL <span className="text-muted-foreground/50">(optional)</span>
+                    </label>
+                    <input
+                      type="url"
+                      id="photo"
+                      name="photo"
+                      autoComplete="one-time-code"
+                      className="w-full px-3 py-2 text-sm bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                      placeholder="https://example.com/photo.jpg"
+                    />
+                  </div>
 
-                {error && (
-                  <p className="text-destructive text-sm">{error}</p>
-                )}
+                  {error && (
+                    <p className="text-destructive text-sm">{error}</p>
+                  )}
 
-                <button
-                  type="submit"
-                  disabled={submitting}
-                  className="mt-4 w-full py-2.5 text-sm rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
-                >
-                  {submitting ? "Submitting..." : "Submit Testimonial"}
-                </button>
+                  <button
+                    type="submit"
+                    disabled={submitting}
+                    className="mt-4 w-full py-2.5 text-sm rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+                  >
+                    {submitting ? "Submitting..." : "Submit Testimonial"}
+                  </button>
+                </div>
               </form>
             </>
           )}

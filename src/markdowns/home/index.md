@@ -7,8 +7,6 @@ socials:
   - image: ../../assets/linkedin-logo.svg
     title: LinkedIn
     link: https://www.linkedin.com/in/aaronmlbnn/
-videoBanner:
-  altText: test
 about:
   name: Aaron Jay
   title: Full Stack Developer

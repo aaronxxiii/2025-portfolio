@@ -25,6 +25,7 @@ collections:
               widget: "hidden",
               default: "home",
             }
+          - { label: "Title", name: "title", widget: "hidden", required: false }
           - {
               label: "About",
               name: "about",
@@ -114,6 +115,13 @@ collections:
                   widget: "boolean",
                   default: false,
                   hint: "Toggle to hide this project from the website",
+                }
+              - {
+                  label: "Featured",
+                  name: "featured",
+                  widget: "boolean",
+                  default: true,
+                  hint: "Toggle to feature this project on the website",
                 }
               - {
                   label: "Hide Stacks",

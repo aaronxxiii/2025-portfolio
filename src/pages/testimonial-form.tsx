@@ -1,5 +1,6 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
+import { Button } from "@/components/ui/button";
 
 const TestimonialFormPage: React.FC<PageProps> = () => {
   const [submitted, setSubmitted] = React.useState(false);
@@ -159,13 +160,13 @@ const TestimonialFormPage: React.FC<PageProps> = () => {
                     <p className="text-destructive text-sm">{error}</p>
                   )}
 
-                  <button
+                  <Button
                     type="submit"
                     disabled={submitting}
-                    className="mt-4 w-full py-2.5 px-3 text-sm border border-transparent rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+                    className="mt-4 w-full cursor-pointer"
                   >
                     {submitting ? "Submitting..." : "Submit Testimonial"}
-                  </button>
+                  </Button>
                 </div>
               </form>
             </>

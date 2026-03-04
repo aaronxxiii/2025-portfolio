@@ -1,16 +1,15 @@
 ---
 templateKey: home
-socials:
-  - image: ../../assets/github-logo.svg
-    link: https://github.com/aarondotdev
-    title: Github
-  - image: ../../assets/linkedin-logo.svg
-    title: LinkedIn
-    link: https://www.linkedin.com/in/aaronmlbnn/
+title: test
 about:
   name: Aaron Jay
   title: Full Stack Developer
   body: ""
+overview:
+  body: I'm a developer with 4+ years of experience building web applications from
+    front to back. I enjoy turning ideas into real, working products — writing
+    clean code, solving hard problems, and shipping things that people actually
+    use.
 experiences:
   - hideStacks: true
     date: Jul 2024 - Present
@@ -25,18 +24,43 @@ experiences:
       cross-functional teams including backend engineers, designers, and product
       managers to deliver seamless and intuitive user experiences.
     contributions:
-      - contribution: Contributed to 4 different projects, delivering scalable frontend solutions and collaborating with cross-functional teams to meet business requirements.
-      - contribution: Actively contributed to full-stack application development, building both frontend interfaces and backend services to deliver complete end-to-end solutions.
-      - contribution: Designed and integrated authentication systems, implementing secure flows with token refresh, session management, and role-based access control.
-      - contribution: Applied security best practices including input sanitization, HTTP-only cookies, and Content Security Policy (CSP) to prevent XSS and CSRF attacks.
-      - contribution: Implemented data-fetching strategies with caching, automatic refetching, and optimistic updates to reduce boilerplate by 40% and improve data synchronization.
-      - contribution: Implemented global state management across multiple projects, simplifying state handling and reducing re-render overhead for improved performance.
-      - contribution: Established frontend design patterns including component composition, custom hooks, and state management strategies to ensure scalable, maintainable, and consistent code across the team.
-      - contribution: Developed unit and end-to-end tests using Vitest and Playwright, ensuring code reliability and catching regressions early in the development cycle.
-      - contribution: Leveraged AI-assisted coding tools (GitHub Copilot, Claude) to accelerate development, streamline debugging, and improve code documentation, resulting in 40% faster iteration cycles and more maintainable codebases.
-      - contribution: Utilized Model Context Protocol (MCP) to integrate AI assistants with development tools and external services, enabling context-aware assistance and streamlined workflows.
-      - contribution: Integrated AI-powered design-to-code workflows to transform Figma mockups into production-ready components, reducing manual translation time by 60% while maintaining design fidelity.
-      - contribution: Configured custom agent skills in Claude to enhance AI capabilities for domain-specific tasks, improving code generation accuracy and output quality.
+      - contribution: Contributed to 4 different projects, delivering scalable frontend
+          solutions and collaborating with cross-functional teams to meet
+          business requirements.
+      - contribution: Actively contributed to full-stack application development,
+          building both frontend interfaces and backend services to deliver
+          complete end-to-end solutions.
+      - contribution: Designed and integrated authentication systems, implementing
+          secure flows with token refresh, session management, and role-based
+          access control.
+      - contribution: Applied security best practices including input sanitization,
+          HTTP-only cookies, and Content Security Policy (CSP) to prevent XSS
+          and CSRF attacks.
+      - contribution: Implemented data-fetching strategies with caching, automatic
+          refetching, and optimistic updates to reduce boilerplate by 40% and
+          improve data synchronization.
+      - contribution: Implemented global state management across multiple projects,
+          simplifying state handling and reducing re-render overhead for
+          improved performance.
+      - contribution: Established frontend design patterns including component
+          composition, custom hooks, and state management strategies to ensure
+          scalable, maintainable, and consistent code across the team.
+      - contribution: Developed unit and end-to-end tests using Vitest and Playwright,
+          ensuring code reliability and catching regressions early in the
+          development cycle.
+      - contribution: Leveraged AI-assisted coding tools (GitHub Copilot, Claude) to
+          accelerate development, streamline debugging, and improve code
+          documentation, resulting in 40% faster iteration cycles and more
+          maintainable codebases.
+      - contribution: Utilized Model Context Protocol (MCP) to integrate AI assistants
+          with development tools and external services, enabling context-aware
+          assistance and streamlined workflows.
+      - contribution: Integrated AI-powered design-to-code workflows to transform Figma
+          mockups into production-ready components, reducing manual translation
+          time by 60% while maintaining design fidelity.
+      - contribution: Configured custom agent skills in Claude to enhance AI
+          capabilities for domain-specific tasks, improving code generation
+          accuracy and output quality.
     stacks:
       - stack name: ReactJS
       - stack name: Nextjs
@@ -57,9 +81,14 @@ experiences:
       designers, backend developers, QA engineers, and product stakeholders to
       ensure technical alignment, design fidelity, and user satisfaction.
     contributions:
-      - contribution: Delivered 5+ CMS projects as a frontend developer, working with clients across various industries and ensuring timely project completion.
-      - contribution: Gained expertise in multiple web frameworks including ReactJS and .NET Blazor, adapting to different tech stacks based on project requirements.
-      - contribution: Integrated headless CMS platforms (NetlifyCMS, Umbraco) and implemented i18n, SEO optimization, and Google services integration.
+      - contribution: Delivered 5+ CMS projects as a frontend developer, working with
+          clients across various industries and ensuring timely project
+          completion.
+      - contribution: Gained expertise in multiple web frameworks including ReactJS and
+          .NET Blazor, adapting to different tech stacks based on project
+          requirements.
+      - contribution: Integrated headless CMS platforms (NetlifyCMS, Umbraco) and
+          implemented i18n, SEO optimization, and Google services integration.
     stacks:
       - stack name: ReactJS
       - stack name: GatsbyJS
@@ -82,10 +111,6 @@ experiences:
       - stack name: Laravel
     company:
       name: Rakso CT
-title: test
-overview:
-  body: >-
-    I'm a developer with 4+ years of experience building web applications from front to back. I enjoy turning ideas into real, working products — writing clean code, solving hard problems, and shipping things that people actually use.
 skills:
   - category: Frontend
     items:
@@ -263,65 +288,81 @@ projects:
       - stack name: SCSS
       - stack name: Netlify CMS
       - stack name: GraphQL
+socials:
+  - image: ../../assets/github-logo.svg
+    link: https://github.com/aarondotdev
+    title: Github
+  - image: ../../assets/linkedin-logo.svg
+    title: LinkedIn
+    link: https://www.linkedin.com/in/aaronmlbnn/
 testimonials:
   - featured: true
-    name: sheena santos
-    role: backend engineer
-    company: 
+    name: Sheena Santos
+    role: Backend Engineer
+    company: BK Keyforce
     date: 2026-03-04
-    photo: 
-    body: "He is a highly skilled Frontend Developer who consistently delivers clean, responsive, and user-friendly interfaces."
+    photo: null
+    body: He is a highly skilled Frontend Developer who consistently delivers clean,
+      responsive, and user-friendly interfaces.
   - featured: true
     name: Jade Soriano
     role: Senior Backend Engineer
     company: BK Keyforce
     date: 2026-03-04
-    photo: 
-    body: "Working with Aaron has been a great experience. He's the kind of developer you can throw any problem at and trust he'll figure it out. Really solid with both frontend and backend, and he genuinely cares about writing good code, not just code that works, but code that's easy to maintain. He's also just a good person to work with, always willing to help out and share what he knows. Highly recommend him."
+    photo: null
+    body: Working with Aaron has been a great experience. He's the kind of developer
+      you can throw any problem at and trust he'll figure it out. Really solid
+      with both frontend and backend, and he genuinely cares about writing good
+      code, not just code that works, but code that's easy to maintain. He's
+      also just a good person to work with, always willing to help out and share
+      what he knows. Highly recommend him.
   - featured: false
     name: Jade Soriano
     role: Senior Backend Engineer
     company: BK Keyforce
     date: 2026-03-04
-    photo: 
-    body: "Working with Aaron has been a great experience. He's the kind of developer you can throw any problem at and trust he'll figure it out. Really solid with both frontend and backend, and he genuinely cares about writing good code, not just code that works, but code that's easy to maintain. He's also just a good person to work with, always willing to help out and share what he knows. Highly recommend him."
+    photo: null
+    body: Working with Aaron has been a great experience. He's the kind of developer
+      you can throw any problem at and trust he'll figure it out. Really solid
+      with both frontend and backend, and he genuinely cares about writing good
+      code, not just code that works, but code that's easy to maintain. He's
+      also just a good person to work with, always willing to help out and share
+      what he knows. Highly recommend him.
   - featured: true
     name: Jeffrey Alteza
     role: Senior Backend Software Engineer
     company: Tech Company
-    date: "2026-03-04"
+    date: 2026-03-04
     photo: ""
-    body: >-
-      I’ve had the pleasure of working with a highly skilled Frontend Engineer
+    body: I’ve had the pleasure of working with a highly skilled Frontend Engineer
       who specializes in React.js and Next.js. He consistently delivers fast,
       scalable, and user-friendly web applications with clean, maintainable
       code. His attention to detail and strong understanding of modern frontend
       best practices ensure every project is both visually polished and
       performance-driven. Beyond his technical expertise, he’s reliable,
-      proactive, and great to collaborate with. I highly recommend him to
-      anyone looking for a talented and dedicated frontend developer.
+      proactive, and great to collaborate with. I highly recommend him to anyone
+      looking for a talented and dedicated frontend developer.
   - featured: true
     name: Jobelle Banez
     role: Mobile Application Developer
     company: BK Keyforce
-    date: "2026-03-04"
+    date: 2026-03-04
     photo: ""
-    body: >-
-      I’ve had the opportunity of working with Aaron for the past year, and
-      he’s been a standout front-end developer on our team. What sets him
-      apart is his genuine passion for his craft — he doesn’t just get the
-      job done, he cares deeply about the quality of his work. He’s a fast
-      learner and always eager to learn from others, which shows his humility
-      and drive to grow. Beyond his technical skills, Aaron is always willing
-      to share his knowledge and lend a hand to his teammates, making everyone
-      around him better. Any team would be lucky to have him.
+    body: I’ve had the opportunity of working with Aaron for the past year, and he’s
+      been a standout front-end developer on our team. What sets him apart is
+      his genuine passion for his craft — he doesn’t just get the job done, he
+      cares deeply about the quality of his work. He’s a fast learner and always
+      eager to learn from others, which shows his humility and drive to grow.
+      Beyond his technical skills, Aaron is always willing to share his
+      knowledge and lend a hand to his teammates, making everyone around him
+      better. Any team would be lucky to have him.
   - featured: false
     name: Placeholder
-    role: ""
-    company: ""
-    date: "2000-01-01"
+    role: "-"
+    company: "-"
+    date: 2000-01-01
     photo: ""
-    body: ""
+    body: "-"
 footer:
   body: Built with **GatsbyJS**, **NetlifyCMS** and **Tailwind CSS**, deployed
     with Netlify.

@@ -7,6 +7,23 @@ media_folder: src/assets
 public_folder: ../../assets/
 
 collections:
+  - name: "testimonials"
+    label: "Testimonials"
+    description: "Moderate testimonial submissions — flip approved to true to publish."
+    folder: "src/markdowns/testimonials"
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "testimonial" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Company", name: "company", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Photo URL", name: "photo", widget: "string", required: false }
+      - { label: "Approved", name: "approved", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "pages"
     label: "Pages"
     description: >

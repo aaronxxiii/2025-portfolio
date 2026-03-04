@@ -2,6 +2,82 @@ import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
+interface SpotifyData {
+  isPlaying: boolean;
+  title: string;
+  artist: string;
+  album: string;
+  songUrl: string;
+  progressMs: number;
+  durationMs: number;
+}
+
+function SpotifyTerminalOutput() {
+  const [data, setData] = React.useState<SpotifyData | null>(null);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    fetch("/.netlify/functions/spotify-now-playing")
+      .then((res) => res.json())
+      .then((json: SpotifyData) => {
+        setData(json.isPlaying ? json : null);
+        setLoading(false);
+      })
+      .catch(() => {
+        setData(null);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <p className="text-muted-foreground">Fetching Spotify data...</p>;
+  }
+
+  if (!data) {
+    return <p className="text-muted-foreground">Nothing is currently playing.</p>;
+  }
+
+  const progress = data.durationMs > 0
+    ? Math.round((data.progressMs / data.durationMs) * 100)
+    : 0;
+  const formatTime = (ms: number) => {
+    const s = Math.floor(ms / 1000);
+    return `${Math.floor(s / 60)}:${(s % 60).toString().padStart(2, "0")}`;
+  };
+  const barLength = 20;
+  const filled = Math.round((progress / 100) * barLength);
+  const bar = "█".repeat(filled) + "░".repeat(barLength - filled);
+
+  return (
+    <div className="space-y-1">
+      <p>
+        <span className="text-[#1DB954] font-bold">♫ Now Playing</span>
+      </p>
+      <div className="border-l-2 border-[#1DB954]/30 pl-3 space-y-1">
+        <p className="text-primary font-bold">{data.title}</p>
+        <p className="text-secondary">{data.artist}</p>
+        <p className="text-muted-foreground text-sm">{data.album}</p>
+        <p className="text-muted-foreground text-sm">
+          <span className="text-[#1DB954]">{bar}</span>{" "}
+          {formatTime(data.progressMs)} / {formatTime(data.durationMs)}
+        </p>
+        {data.songUrl && (
+          <p>
+            <a
+              href={data.songUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#1DB954] underline text-sm"
+            >
+              Open in Spotify
+            </a>
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
+
 interface HistoryEntry {
   command: string;
   output: React.ReactNode;
@@ -119,6 +195,7 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
               ["/projects", "Things I've built"],
               ["/testimonials", "What people say"],
               ["/socials", "Where to find me"],
+              ["/spotify", "Now playing on Spotify"],
               ["/clear", "Clear terminal"],
               ["/exit", "Return to portfolio"],
             ].map(([c, d]) => (
@@ -295,6 +372,9 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
             )}
           </div>
         );
+
+      case "/spotify":
+        return <SpotifyTerminalOutput />;
 
       case "/clear":
         return null;

@@ -3,6 +3,7 @@ import Footer from "@/components/core/footer";
 import GithubCalendar from "@/components/core/github-calendar";
 import Projects from "@/components/core/projects";
 import Skills from "@/components/core/skills";
+import SpotifyNowPlaying from "@/components/core/spotify-now-playing";
 import Testimonials from "@/components/core/testimonials";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
@@ -43,6 +44,8 @@ function MainContent() {
           </ReactMarkdown>
         </div>
       </section>
+
+      <SpotifyNowPlaying />
 
       <section id="skills" className="pt-16 border-t border-border mt-16">
         <p className="text-muted-foreground text-sm mb-4">

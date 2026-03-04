@@ -506,6 +506,27 @@ main {
   animation: blink 1s step-end infinite;
 }
 
+@keyframes eq1 {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+@keyframes eq2 {
+  0%, 100% { transform: scaleY(0.6); }
+  30% { transform: scaleY(0.2); }
+  70% { transform: scaleY(1); }
+}
+
+@keyframes eq3 {
+  0%, 100% { transform: scaleY(0.5); }
+  40% { transform: scaleY(1); }
+  80% { transform: scaleY(0.3); }
+}
+
+.animate-eq1 { animation: eq1 0.8s ease-in-out infinite; }
+.animate-eq2 { animation: eq2 0.9s ease-in-out infinite; }
+.animate-eq3 { animation: eq3 0.7s ease-in-out infinite; }
+
 .terminal-scroll::-webkit-scrollbar {
   width: 6px;
 }

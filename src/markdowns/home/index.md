@@ -265,6 +265,13 @@ projects:
       - stack name: GraphQL
 testimonials:
   - featured: true
+    name: sheena santos
+    role: backend engineer
+    company: 
+    date: 2026-03-04
+    photo: 
+    body: "He is a highly skilled Frontend Developer who consistently delivers clean, responsive, and user-friendly interfaces."
+  - featured: true
     name: Jade Soriano
     role: Senior Backend Engineer
     company: BK Keyforce

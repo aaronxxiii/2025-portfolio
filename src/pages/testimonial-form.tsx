@@ -162,7 +162,7 @@ const TestimonialFormPage: React.FC<PageProps> = () => {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="mt-4 w-full py-2.5 text-sm rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+                    className="mt-4 w-full py-2.5 px-3 text-sm border border-transparent rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
                   >
                     {submitting ? "Submitting..." : "Submit Testimonial"}
                   </button>

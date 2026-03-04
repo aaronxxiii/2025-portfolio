@@ -267,6 +267,18 @@ testimonials:
   - featured: true
     name: Jeffrey Alteza
     role: Senior Backend Software Engineer
+    company: BK Keyforce
+    date: 2026-03-04
+    photo: 
+    approved: false
+    body: "I’ve had the pleasure of working with a highly skilled Frontend Engineer who specializes in React.js and Next.js. He consistently delivers fast, scalable, and user-friendly web applications with clean, maintainable code.
+
+His attention to detail and strong understanding of modern frontend best practices ensure every project is both visually polished and performance-driven. Beyond his technical expertise, he’s reliable, proactive, and great to collaborate with.
+
+I highly recommend him to anyone looking for a talented and dedicated frontend developer."
+  - featured: true
+    name: Jeffrey Alteza
+    role: Senior Backend Software Engineer
     company: Tech Company
     date: 2026-03-04
     photo: 

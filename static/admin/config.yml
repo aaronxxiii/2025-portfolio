@@ -187,6 +187,6 @@ collections:
             widget: "object"
             fields:
               [
-                { label: "Name", name: "name", widget: "string", required: false, hidden: true },
+                { label: "Name", name: "name", widget: "hidden", default: "" },
                 { label: "Body", name: "body", widget: "markdown" },
               ]

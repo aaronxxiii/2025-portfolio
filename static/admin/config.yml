@@ -180,7 +180,6 @@ collections:
               - { label: "Company", name: "company", widget: "string" }
               - { label: "Date", name: "date", widget: "string" }
               - { label: "Photo URL", name: "photo", widget: "string", required: false }
-              - { label: "Approved", name: "approved", widget: "boolean", default: false }
               - { label: "Body", name: "body", widget: "text" }
           - label: "Footer"
             name: "footer"

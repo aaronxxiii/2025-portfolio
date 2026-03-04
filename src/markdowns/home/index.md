@@ -270,7 +270,6 @@ testimonials:
     company: Tech Company
     date: "2026-03-04"
     photo: ""
-    approved: true
     body: >-
       I’ve had the pleasure of working with a highly skilled Frontend Engineer
       who specializes in React.js and Next.js. He consistently delivers fast,
@@ -286,7 +285,6 @@ testimonials:
     company: BK Keyforce
     date: "2026-03-04"
     photo: ""
-    approved: true
     body: >-
       I’ve had the opportunity of working with Aaron for the past year, and
       he’s been a standout front-end developer on our team. What sets him
@@ -302,7 +300,6 @@ testimonials:
     company: ""
     date: "2000-01-01"
     photo: ""
-    approved: false
     body: ""
 footer:
   body: Built with **GatsbyJS**, **NetlifyCMS** and **Tailwind CSS**, deployed

@@ -18,15 +18,14 @@ function escapeYaml(value) {
 }
 
 /** Build a YAML list entry for a testimonial. */
-function buildTestimonialYaml({ name, role, company, testimonial, photo, date }) {
+function buildTestimonialYaml({ name, role, company, testimonial, photo, date, featured }) {
   return [
-    `  - featured: true`,
+    `  - featured: ${featured ? "true" : "false"}`,
     `    name: ${escapeYaml(name)}`,
     `    role: ${escapeYaml(role)}`,
-    `    company: ${escapeYaml(company)}`,
+    `    company: ${escapeYaml(company || "")}`,
     `    date: ${date}`,
     `    photo: ${escapeYaml(photo || "")}`,
-    `    approved: false`,
     `    body: ${escapeYaml(testimonial)}`,
   ].join("\n");
 }
@@ -48,7 +47,7 @@ export default async function handler(request) {
     return new Response("Invalid JSON.", { status: 400 });
   }
 
-  const { name, role, company, testimonial, photo } = data;
+  const { name, role, company, testimonial, photo, featured } = data;
 
   if (!name || !role || !testimonial) {
     return new Response("Missing required fields.", { status: 400 });
@@ -74,7 +73,7 @@ export default async function handler(request) {
 
   // 2. Insert new testimonial entry after the `testimonials:` line
   const dateStr = new Date().toISOString().slice(0, 10);
-  const entry = buildTestimonialYaml({ name, role, company, testimonial, photo, date: dateStr });
+  const entry = buildTestimonialYaml({ name, role, company, testimonial, photo, date: dateStr, featured });
 
   let updatedContent;
   const testimonialsIdx = currentContent.indexOf("\ntestimonials:\n");

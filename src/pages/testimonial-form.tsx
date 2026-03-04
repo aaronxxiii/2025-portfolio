@@ -14,12 +14,16 @@ const TestimonialFormPage: React.FC<PageProps> = () => {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    const params = new URLSearchParams(window.location.search);
+    const featured = params.get("featured") === "1";
+
     const payload = {
       name: formData.get("name"),
       role: formData.get("role"),
       company: formData.get("company"),
       testimonial: formData.get("testimonial"),
       photo: formData.get("photo"),
+      featured,
     };
 
     try {

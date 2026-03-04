@@ -58,7 +58,6 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
             company
             date
             body
-            approved
           }
           socials {
             title
@@ -235,18 +234,17 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
         );
 
       case "/testimonials": {
-        const approved = fm.testimonials?.filter(
-          (t: { approved: boolean; featured?: boolean }) =>
-            t.approved && t.featured
+        const featured = fm.testimonials?.filter(
+          (t: { featured?: boolean }) => t.featured
         );
-        if (!approved?.length) {
+        if (!featured?.length) {
           return (
             <p className="text-muted-foreground">No testimonials yet.</p>
           );
         }
         return (
           <div className="space-y-4">
-            {approved.map(
+            {featured.map(
               (
                 t: {
                   name: string;

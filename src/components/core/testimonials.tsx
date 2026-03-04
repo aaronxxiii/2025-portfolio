@@ -13,7 +13,6 @@ function Testimonials() {
             company
             date
             photo
-            approved
             body
           }
         }
@@ -22,7 +21,7 @@ function Testimonials() {
   `);
 
   const testimonials = data?.markdownRemark?.frontmatter?.testimonials?.filter(
-    (t: any) => t?.approved && t?.featured
+    (t: any) => t?.featured
   );
 
   if (!testimonials?.length) return null;

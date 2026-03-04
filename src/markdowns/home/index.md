@@ -266,6 +266,15 @@ projects:
       - stack name: Netlify CMS
       - stack name: GraphQL
 testimonials:
+  - featured: true
+    name: Jobelle Banez
+    role: Mobile Application Developer
+    company: BK Keyforce
+    date: 2026-03-04
+    photo: 
+    approved: false
+    body: "I've had the opportunity of working with Aaron for the past year, and he's been a standout front-end developer on our team. What sets him apart is his genuine passion for his craft — he doesn't just get the job done, he cares deeply about the quality of his work. He's a fast learner and always eager to learn from others, which shows his humility and drive to grow. Beyond his technical skills, Aaron is always willing to share his knowledge and lend a hand to his teammates, making everyone around him better. Any team would be lucky to have him. 
+"
   - featured: false
     name: Placeholder
     role: ""

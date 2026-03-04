@@ -43,7 +43,7 @@ const TestimonialFormPage: React.FC<PageProps> = () => {
 
   return (
     <div className="min-h-screen bg-background p-0 md:p-8">
-      <div className="w-full mx-auto border border-border bg-card shadow-2xl overflow-hidden rounded-none md:rounded-xl">
+      <div className="max-w-5xl mx-auto border border-border bg-card shadow-2xl overflow-hidden rounded-none md:rounded-xl">
         {/* Terminal title bar */}
         <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-card">
           <span className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--dot-red)' }} />

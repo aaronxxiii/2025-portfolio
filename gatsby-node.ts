@@ -1,6 +1,16 @@
-import { Actions } from "gatsby";
+import { Actions, CreateSchemaCustomizationArgs } from "gatsby";
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
+
+export const createSchemaCustomization = ({
+  actions,
+}: CreateSchemaCustomizationArgs) => {
+  actions.createTypes(`
+    type MarkdownRemarkFrontmatterTestimonials @infer {
+      portfolio_link: String
+    }
+  `);
+};
 
 export const onCreateWebpackConfig = ({ actions }: { actions: Actions }) => {
   actions.setWebpackConfig({

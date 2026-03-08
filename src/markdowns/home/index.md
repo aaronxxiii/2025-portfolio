@@ -146,9 +146,8 @@ skills:
       - skill_name: Drizzle ORM
   - category: AI Tools
     items:
-      - skill_name: GitHub Copilot
-      - skill_name: Claude
       - skill_name: Claude Code
+      - skill_name: n8n
       - skill_name: Claude API
       - skill_name: ChatGPT
       - skill_name: MCP Integration

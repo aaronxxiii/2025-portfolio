@@ -3,7 +3,7 @@ templateKey: home
 title: test
 about:
   name: Aaron Jay
-  title: Full Stack Developer
+  title: Full Stack Developer / AI Workflow Developer
   body: ""
 overview:
   body: I'm a developer with 4+ years of experience building web applications from

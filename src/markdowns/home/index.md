@@ -12,7 +12,7 @@ overview:
     use.
 experiences:
   - hideStacks: true
-    date: Jul 2024 - Present
+    date: Jul 2024 - March 2026
     company:
       name: BK Keyforce
     title: Front End Engineer
@@ -111,6 +111,18 @@ experiences:
       - stack name: Laravel
     company:
       name: Rakso CT
+  - hideStacks: false
+    date: March 2026 - Present
+    company:
+      name: State And Liberty Clothing Co.
+      link: https://stateandliberty.com
+    title: AI Automation Developer
+    body: >-
+      * Designed and built an end-to-end RFID inventory reconciliation system
+      automating cycle count processing across 42+ retail stores, reducing
+      per-store correction time from 30+ minutes to under 10 seconds
+
+      * Engineered resilient error handling across 74 workflow nodes — error output branching, failure notifications, idempotent corrections, and a reusable execution replay system for recovering failed mid-pipeline runs
 skills:
   - category: Frontend
     items:

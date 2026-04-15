@@ -17,15 +17,18 @@ experiences:
       name: State And Liberty Clothing Co.
       link: https://stateandliberty.com
     title: AI Automation Developer
-    body: >-
-      * Designed and built an end-to-end RFID inventory reconciliation system
-      automating cycle count processing across 42+ retail stores, reducing
-      per-store correction time from 30+ minutes to under 10 seconds
-
-      * Engineered resilient error handling across 74 workflow nodes — error output branching, failure notifications, idempotent corrections, and a reusable execution replay system for recovering failed mid-pipeline runs
+    body: Full-stack engineer responsible for designing, building, and maintaining
+      the internal technology platform that powers retail operations across 44
+      store locations. Sole developer bridging the gap between business
+      operations and engineering — translating manual, error-prone workflows
+      into automated, data-driven systems.
     contributions:
+      - contribution: " Developed a 64-component React library (@state-and-liberty/ui)
+          built on Base UI + shadcn patterns with a navy-first design system
+          tailored for data-dense admin interfaces. Ships via both shadcn
+          registry and   npm package with full CI/CD to GitHub Pages."
       - contribution: Designed and built an end-to-end RFID inventory reconciliation
-          system automating cycle count processing across 42+ retail stores,
+          system automating cycle count processing across 44 retail stores,
           reducing per-store correction time from 30+ minutes to under 10
           seconds.
       - contribution: Engineered resilient error handling across 74 workflow nodes —

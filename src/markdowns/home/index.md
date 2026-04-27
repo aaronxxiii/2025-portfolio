@@ -11,7 +11,7 @@ overview:
     clean code, solving hard problems, and shipping things that people actually
     use.
 experiences:
-  - hidden: true
+  - hidden: false
     hideStacks: true
     date: March 2026 - Present
     company:
@@ -97,6 +97,7 @@ experiences:
       - stack name: TypeScript
       - stack name: Tailwind
       - stack name: Laravel
+    hidden: false
   - hideStacks: true
     date: Sep 2022 - Jul 2024
     company:
@@ -125,6 +126,7 @@ experiences:
       - stack name: TypeScript
       - stack name: SCSS
       - stack name: .NET Blazor
+    hidden: false
   - hideStacks: true
     date: Jan 2022 - Apr 2022
     title: Associate Software Engineer
@@ -145,6 +147,7 @@ experiences:
       - stack name: Laravel
     company:
       name: Rakso CT
+    hidden: false
 skills:
   - category: Frontend
     items:

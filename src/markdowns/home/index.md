@@ -32,6 +32,11 @@ experiences:
           system automating cycle count processing across 44 retail stores,
           reducing per-store correction time from 30+ minutes to under 10
           seconds.
+      - contribution: Architected and built the operations control plane for the n8n
+          RFID pipeline — a single dashboard where non-technical ops  staff
+          trigger workflows, review stats and error logs, run manual recounts,
+          and handshake with stores on recount decisions,  eliminating their
+          dependency on the raw n8n console.
       - contribution: Engineered resilient error handling across 74 workflow nodes —
           error output branching, failure notifications, idempotent corrections,
           and a reusable execution replay system for recovering failed

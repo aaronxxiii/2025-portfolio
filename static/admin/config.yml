@@ -160,6 +160,45 @@ collections:
                       name: "stack name",
                       widget: "string",
                     }
+          - label: "Certificates"
+            name: "certificates"
+            widget: "list"
+            required: false
+            fields:
+              - {
+                  label: "Hidden",
+                  name: "hidden",
+                  widget: "boolean",
+                  default: false,
+                  hint: "Toggle to hide this certificate from the website",
+                }
+              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Issuer",
+                  name: "issuer",
+                  widget: "string",
+                  hint: "e.g. Anthropic",
+                }
+              - {
+                  label: "Date",
+                  name: "date",
+                  widget: "string",
+                  hint: "e.g. April 2026",
+                }
+              - {
+                  label: "Link",
+                  name: "link",
+                  widget: "string",
+                  required: false,
+                  hint: "URL or path to certificate (e.g. /certificates/your-cert.pdf)",
+                }
+              - {
+                  label: "Body",
+                  name: "body",
+                  widget: "text",
+                  required: false,
+                  hint: "Optional one-line description",
+                }
           - label: "Socials"
             name: "socials"
             widget: "list"

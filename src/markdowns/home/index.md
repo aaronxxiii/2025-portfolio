@@ -324,6 +324,14 @@ projects:
       - stack name: SCSS
       - stack name: Netlify CMS
       - stack name: GraphQL
+certificates:
+  - hidden: false
+    title: Introduction to Agent Skills
+    issuer: Anthropic
+    date: April 2026
+    link: /certificates/anthropic-agent-skills.pdf
+    body: Certificate of completion covering the design, packaging, and
+      orchestration of Claude agent skills.
 socials:
   - image: ../../assets/github-logo.svg
     link: https://github.com/aarondotdev

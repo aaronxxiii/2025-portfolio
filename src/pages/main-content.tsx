@@ -1,3 +1,4 @@
+import Certificates from "@/components/core/certificates";
 import Experiences from "@/components/core/experiences";
 import Footer from "@/components/core/footer";
 import GithubCalendar from "@/components/core/github-calendar";
@@ -57,6 +58,13 @@ function MainContent() {
           <span className="text-primary">$</span> gh contribution-graph
         </p>
         <GithubCalendar />
+      </section>
+
+      <section id="certificates" className="pt-16 border-t border-border mt-16">
+        <p className="text-muted-foreground text-sm mb-4">
+          <span className="text-primary">$</span> ls ./certificates/
+        </p>
+        <Certificates />
       </section>
 
       <section id="experiences" className="pt-16 border-t border-border mt-16">

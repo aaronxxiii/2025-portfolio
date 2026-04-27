@@ -40,6 +40,7 @@ function SideContent() {
     { label: "ABOUT", value: "#about" },
     { label: "SKILLS", value: "#skills" },
     { label: "GITHUB", value: "#github" },
+    { label: "CERTIFICATES", value: "#certificates" },
     { label: "EXPERIENCES", value: "#experiences" },
     { label: "PROJECTS", value: "#projects" },
     { label: "TESTIMONIALS", value: "#testimonials" },

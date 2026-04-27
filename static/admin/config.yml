@@ -48,6 +48,13 @@ collections:
             widget: "list"
             fields:
               - {
+                  label: "Hidden",
+                  name: "hidden",
+                  widget: "boolean",
+                  default: false,
+                  hint: "Toggle to hide this experience from the website",
+                }
+              - {
                   label: "Hide Stacks",
                   name: "hideStacks",
                   widget: "boolean",

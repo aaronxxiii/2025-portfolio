@@ -9,6 +9,7 @@ function experiences() {
       markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
         frontmatter {
           experiences {
+            hidden
             hideStacks
             date
             body
@@ -28,7 +29,7 @@ function experiences() {
     }
   `);
 
-  const experiences = data?.markdownRemark?.frontmatter?.experiences
+  const experiences = data?.markdownRemark?.frontmatter?.experiences?.filter((item: any) => !item?.hidden)
 
   return (
     <div className="flex flex-col gap-y-12">

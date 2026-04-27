@@ -107,6 +107,7 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
             }
           }
           experiences {
+            hidden
             date
             title
             body
@@ -240,7 +241,9 @@ const TerminalMode: React.FC<TerminalModeProps> = ({ onExit }) => {
       case "/experiences":
         return (
           <div className="space-y-4">
-            {fm.experiences.map(
+            {fm.experiences
+              .filter((exp: { hidden?: boolean }) => !exp?.hidden)
+              .map(
               (
                 exp: {
                   title: string;

@@ -11,7 +11,8 @@ overview:
     clean code, solving hard problems, and shipping things that people actually
     use.
 experiences:
-  - hideStacks: true
+  - hidden: true
+    hideStacks: true
     date: March 2026 - Present
     company:
       name: State And Liberty Clothing Co.

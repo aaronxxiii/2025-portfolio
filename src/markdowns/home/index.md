@@ -332,6 +332,13 @@ certificates:
     link: /certificates/anthropic-agent-skills.pdf
     body: Certificate of completion covering the design, packaging, and
       orchestration of Claude agent skills.
+  - hidden: false
+    title: Claude with the Anthropic API
+    issuer: Anthropic
+    date: April 30, 2026
+    link: /certificates/anthropic-claude-api.pdf
+    body: Certificate of completion covering building applications with the
+      Anthropic API — messages, tool use, streaming, and prompt engineering.
 socials:
   - image: ../../assets/github-logo.svg
     link: https://github.com/aarondotdev

@@ -339,6 +339,21 @@ certificates:
     link: /certificates/anthropic-claude-api.pdf
     body: Certificate of completion covering building applications with the
       Anthropic API — messages, tool use, streaming, and prompt engineering.
+  - hidden: false
+    title: Claude Code in Action
+    issuer: Anthropic
+    date: April 30, 2026
+    link: /certificates/anthropic-claude-code-in-action.pdf
+    body: Certificate of completion covering hands-on use of Claude Code for
+      real-world software engineering workflows.
+  - hidden: false
+    title: Introduction to Model Context Protocol
+    issuer: Anthropic
+    date: April 30, 2026
+    link: /certificates/anthropic-mcp.pdf
+    body: Certificate of completion covering the fundamentals of the Model
+      Context Protocol (MCP) for connecting AI assistants to tools and data
+      sources.
 socials:
   - image: ../../assets/github-logo.svg
     link: https://github.com/aarondotdev
